@@ -12,7 +12,7 @@ const PROJECTS_DATA = [
         category: "biotech",
         categoryName: "Biomedical & BCI Research",
         status: "500+ Neural Datasets",
-        image: "img/biotech.jpg",
+        image: "img/cognitrack.png",
         imageFit: "cover",
         summary: "An EEG-based Brain-Computer Interface built in Python and PyTorch that analyzes 500+ neural signal datasets to detect cognitive fatigue and prevent burnout.",
         details: "CogniTrack is an EEG-based Brain-Computer Interface (BCI) platform built in Python and PyTorch to objectively measure cognitive load and prevent burnout in students and working professionals. By training deep learning models across more than 500 neural signal datasets, the system classifies mental fatigue states in real time. Full technical methodology and results are documented in the formal research paper, alongside a public overview article published on Medium.",
