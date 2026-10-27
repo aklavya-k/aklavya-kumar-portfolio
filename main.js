@@ -1,10 +1,10 @@
 /**
  * Aklavya Kumar Portfolio - 3D WebGL GLSL Shader & Interactive Engine (main.js)
- * High School Senior (Batch of June 2027) | Cumberland Valley High School
- * Features Real-Time Raymarched/Procedural Topographic GLSL Shaders + Complete Resume Data
+ * Engineer, Neurotechnology Researcher & Author | Cumberland Valley High School
+ * Features Real-Time Topographic GLSL Shaders + Natural Engineering Copy
  */
 
-// --- 1. Complete Verified Project & Research Database (From Resume & Common App PDFs) ---
+// --- 1. Complete Engineering, Research & Publications Database ---
 const PROJECTS_DATA = [
     {
         id: "cognitrack-bci",
@@ -13,138 +13,156 @@ const PROJECTS_DATA = [
         categoryName: "Biomedical & BCI Research",
         status: "500+ Neural Datasets",
         image: "img/biotech.jpg",
-        summary: "Engineered an EEG-based Brain-Computer Interface (BCI) platform in Python and PyTorch processing 500+ neural signal datasets to predict cognitive burnout.",
-        details: "Engineered an EEG-based Brain-Computer Interface (BCI) platform in Python and PyTorch to predict and prevent student and adult burnout. Processed over 500+ neural signal datasets to build a novel AI diagnostic model. Authored and published an independent computational biomedical research paper exploring cognitive load tracking and neural signal processing, with technical findings submitted for leading technical journal review.",
-        tags: ["Python", "PyTorch", "500+ Neural Datasets", "EEG Signal Processing", "Machine Learning", "Peer-Reviewed Paper"],
-        metrics: "500+ Neural Signal Datasets Processed | Published Research",
-        link: "https://medium.com/@aklavyakumr/cognitrack-a-brain-computer-interface-for-objective-monitoring-of-cognitive-fatigue-and-student-2f5b4cb5b3b6?sharedUserId=aklavyakumr",
-        linkText: "Read Published Research on Medium"
+        imageFit: "cover",
+        summary: "An EEG-based Brain-Computer Interface built in Python and PyTorch that analyzes 500+ neural signal datasets to detect cognitive fatigue and prevent burnout.",
+        details: "CogniTrack is an EEG-based Brain-Computer Interface (BCI) platform built in Python and PyTorch to objectively measure cognitive load and prevent burnout in students and working professionals. By training deep learning models across more than 500 neural signal datasets, the system classifies mental fatigue states in real time. Full technical methodology and results are documented in the formal research paper, alongside a public overview article published on Medium.",
+        tags: ["Python", "PyTorch", "500+ Neural Datasets", "EEG Signal Processing", "Machine Learning", "Research Paper"],
+        metrics: "500+ Neural Signal Datasets | Research Paper & Medium Article",
+        link: "https://docs.google.com/document/d/1GCnS6kl_VVaN-jITx9sfBQzqym1Ut4TVTBo4DzyOyy4/edit?usp=sharing",
+        linkText: "Read Formal Research Paper",
+        secondaryLink: "https://medium.com/@aklavyakumr/cognitrack-a-brain-computer-interface-for-objective-monitoring-of-cognitive-fatigue-and-student-2f5b4cb5b3b6?sharedUserId=aklavyakumr",
+        secondaryLinkText: "Read Medium Article"
     },
     {
         id: "published-book-bci",
-        title: "Published Book: From Healing to Superhuman",
+        title: "From Healing to Superhuman (Published Book)",
         category: "biotech",
         categoryName: "Published Author",
         status: "Available on Amazon",
-        image: "img/biotech.jpg",
-        summary: "Authored and published a comprehensive book on Amazon detailing the medical, cognitive, and ethical future of Brain-Computer Interfaces (BCIs).",
-        details: "Authored and published the book 'From Healing to Superhuman', available globally on Amazon. Explores the evolution, clinical applications, cognitive enhancement capabilities, and societal impacts of Brain-Computer Interfaces (BCIs) and neurotechnology. Managed independent editing, formatting, and global retail distribution.",
-        tags: ["Published Author", "Amazon Retail", "Neurotechnology", "BCI Ethics", "Medical Therapeutics", "Cognitive Enhancement"],
-        metrics: "Published Book on Amazon | Global Distribution",
+        image: "img/from_healing_to_superhuman.jpg",
+        imageFit: "contain",
+        summary: "Authored and published 'From Healing to Superhuman: How Brain-Computer Interfaces Restore Broken Bodies and Enhance Daily Life', available on Amazon.",
+        details: "Written by Aklavya Kumar and available on Amazon, 'From Healing to Superhuman: How Brain-Computer Interfaces Restore Broken Bodies and Enhance Daily Life' examines the engineering, clinical rehabilitation pathways, cognitive enhancement applications, and ethical questions surrounding modern neurotechnology and Brain-Computer Interfaces.",
+        tags: ["Published Book", "Amazon", "Brain-Computer Interfaces", "Neurotechnology", "Biomedical Engineering"],
+        metrics: "Published Book by Aklavya Kumar | Available on Amazon",
         link: "https://www.amazon.com/s?k=From+Healing+to+Superhuman+Aklavya+Kumar",
         linkText: "View Book on Amazon"
     },
     {
         id: "ftc-robotics-lead",
-        title: "FIRST Tech Challenge (FTC 8468 The Javengers / 14464)",
+        title: "FIRST Tech Challenge: FTC 8468 The Javengers",
         category: "robotics",
         categoryName: "Robotics & Autonomous Systems",
-        status: "Dean's List Semi-Finalist (Top 40 PA)",
-        image: "img/ftc-team.jpg",
-        summary: "Programmed millimeter-precise Java autonomous systems (RoadRunner & PedroPathing) and engineered intake/lift mechanisms. Led team to 3 State Finals & 12 awards.",
-        details: "Build & Programming Lead for FTC 8468 The Javengers (sponsored by Optum, TE Connectivity, Bank of America, UnitedHealth Group) and previously FTC 14464 BotBusters. Programmed millimeter-precise Java autonomous navigation systems using RoadRunner, PedroPathing, and OpenCV. Engineered complex intake, lift, and scoring mechanisms for state-finalist robots. Led team to 3 PA State Finals appearances and 12 competitive awards (Motivate, Connect, Inspire, Control, and Think awards). Named FIRST Dean's List Semi-Finalist (Top 40 across Pennsylvania). Coached summer robotics camps for 40+ Cumberland Valley youth.",
-        tags: ["Java", "RoadRunner", "PedroPathing", "OnShape CAD", "3x State Finalist", "12 Competitive Awards", "Dean's List Semi-Finalist"],
-        metrics: "3 State Finals | 12 Awards | Top 40 PA Dean's List Semi-Finalist",
+        status: "Dean's List Semi-Finalist",
+        image: "img/ftc-team.jpeg",
+        imageFit: "cover",
+        summary: "Build & Programming Lead for FTC 8468 The Javengers (1600x1200 team workspace). Developing millimeter-accurate Java autonomous routines and custom hardware.",
+        details: "Serving as Build & Programming Lead for FIRST Tech Challenge Team 8468 The Javengers in Mechanicsburg, PA (sponsored by Optum, TE Connectivity, Bank of America, and UnitedHealth Group), following three seasons with FTC 14464 BotBusters. Designed multi-stage intake, lift, and scoring mechanisms in OnShape and Fusion 360, and wrote millimeter-accurate Java autonomous navigation using RoadRunner, PedroPathing, and OpenCV. Competed in 3 Pennsylvania State Championship Finals, won 12 team awards (Control, Inspire, Motivate, Connect, and Think), and was named a FIRST Dean's List Semi-Finalist. Also directs summer robotics camps for over 40 local students.",
+        tags: ["Java", "RoadRunner", "PedroPathing", "OnShape CAD", "FTC 8468 The Javengers", "Dean's List Semi-Finalist"],
+        metrics: "3x PA State Finalist | 12 Awards | Dean's List Semi-Finalist",
         link: "http://www.pacar-robotics.org",
         linkText: "Visit PACAR Robotics (pacar-robotics.org)"
     },
     {
         id: "scioly-precision-devices",
-        title: "Science Olympiad Precision Engineering Apparatuses",
+        title: "Science Olympiad Autonomous & Aerospace Hardware",
         category: "robotics",
-        categoryName: "Autonomous & Aerospace Hardware",
-        status: "30+ Medals | 19th & 20th Nat'l",
+        categoryName: "Precision Engineering",
+        status: "30+ Medals | Top-20 Nationals",
         image: "img/robotTour.jpg",
-        summary: "Designed and calibrated Hovercraft (3rd MIT), Electric Vehicle (4th PSU), Robot Tour (5th), and Helicopter. Led 20+ member team to 19th & 20th National finishes.",
-        details: "Varsity competitor and Lead Robotics Developer for CVHS Science Olympiad. Led 20+ member team to consecutive Top 20 National tournament finishes (19th in 2024, 20th in 2025) and earned 30+ individual and team build/lab medals across MIT, UPenn, Solon, Battle of Valley Forge, and Penn State invitationals. Engineered four precision apparatuses: (1) Hovercraft: lightweight thrust-controlled air-cushion vehicle with propulsion vectoring (3rd Place at MIT); (2) Electric Vehicle: battery-powered vehicle with custom gear trains and electrical braking system for exact stopping accuracy (4th Place at PSU); (3) Robot Tour: autonomous sensor-guided mobile vehicle navigating obstacle courses under strict timing constraints (5th Place); (4) Helicopter: rubber-band powered endurance aircraft with high-aspect-ratio propellers.",
-        tags: ["Robot Tour (5th)", "Hovercraft (3rd MIT)", "Electric Vehicle (4th PSU)", "Helicopter", "30+ Medals", "Arduino & MicroPython"],
+        imageFit: "cover",
+        summary: "Engineered competitive Hovercraft (3rd at MIT), Electric Vehicle (4th at Penn State), Robot Tour (5th), and Helicopter systems across national invitationals.",
+        details: "Varsity competitor and lead robotics developer for Cumberland Valley High School Science Olympiad, contributing to consecutive Top-20 National team finishes (19th in 2024, 20th in 2025) and winning more than 30 medals at MIT, UPenn, Solon, Battle of Valley Forge, and Penn State. Built and calibrated four hardware systems: (1) Hovercraft: thrust-controlled air-cushion vehicle with optimized lift-to-weight ratios and propulsion vectoring (3rd Place at MIT); (2) Electric Vehicle: battery-powered chassis with custom gear trains and electrical braking for exact target stopping (4th Place at Penn State); (3) Robot Tour: autonomous sensor-guided vehicle programmed for obstacle navigation and vector mapping (5th Place); (4) Helicopter: ultra-low-mass balsa endurance aircraft.",
+        tags: ["Robot Tour (5th)", "Hovercraft (3rd MIT)", "Electric Vehicle (4th PSU)", "Helicopter", "30+ Medals", "Embedded C / Python"],
         metrics: "3rd MIT Hovercraft | 4th PSU EV | 5th Robot Tour | 30+ Medals",
         link: "https://github.com/Fe4Rless233/Robot-Tour",
         linkText: "Inspect Robot Tour GitHub Repository"
     },
     {
         id: "iro-world-semifinalist",
-        title: "International Research Olympiad (IRO) & CVHS Chapter",
+        title: "International Research Olympiad (IRO) & CVHS Research",
         category: "biotech",
-        categoryName: "Global Scientific Research",
-        status: "Top 10% Globally (10k+ Entrants)",
+        categoryName: "Scientific Research",
+        status: "Top 10% Globally",
         image: "img/IRO.jpg",
-        summary: "International Semifinalist ranking in the Top 10% globally out of 10,000+ entrants. Founded CVHS's first research program and mentored 60+ peers.",
-        details: "Achieved International Semifinalist distinction in the International Research Olympiad (IRO), placing in the Top 10% globally among 10,000+ entrants. Pioneered Cumberland Valley High School's first research program as Founder and President of the CVHS IRO Club. Mentored 60+ peers in quantitative, qualitative, and mixed-method experimental design, Python/pandas data analytics, and academic paper writing.",
-        tags: ["IRO International Semifinalist", "Top 10% of 10k+ Entrants", "60+ Peers Mentored", "Python & Pandas", "Experimental Design"],
-        metrics: "Top 10% Globally (10,000+ Entrants) | 60+ Peers Mentored",
+        imageFit: "contain",
+        summary: "International Semifinalist placing in the Top 10% worldwide among 10,000+ competitors. Founded the CVHS IRO chapter and mentors 60+ student researchers.",
+        details: "Earned International Semifinalist honors in the International Research Olympiad (IRO), ranking in the Top 10% globally out of more than 10,000 entrants in scientific literature analysis and quantitative problem-solving. Founded the Cumberland Valley High School IRO chapter, guiding over 60 students in experimental design, Python and pandas data analysis, and research paper authorship.",
+        tags: ["IRO International Semifinalist", "Top 10% Worldwide", "60+ Student Researchers", "Python & Pandas", "Scientific Writing"],
+        metrics: "Top 10% Globally (10,000+ Entrants) | Official Certificate",
         link: "img/IRO-2026-Certificate-Aklavya.pdf",
         linkText: "View Official IRO Certificate (PDF)"
     },
     {
         id: "fbla-national-top10",
-        title: "FBLA Dual National Top 10 & Region 26 Treasurer",
+        title: "FBLA National Top 10 & PA State Champion",
         category: "leadership",
         categoryName: "Information Systems & Finance",
         status: "1st PA State | 8th & 10th Nat'l",
         image: "img/fbla.png",
-        summary: "1st Place PA State & 10th Place National Champion in Management Information Systems (2026); 3rd PA State & 8th Place National in Intro to Programming (2025).",
-        details: "Serves as FBLA Region 26 Regional Treasurer, managing financial accounts, RLC funds, and event budgets across student initiatives. Competed at state and national levels: 1st Place PA State Champion and 10th Place National Winner in Management Information Systems (2026); 3rd Place PA State and 8th Place National Winner in Introduction to Programming (2025); 3rd Place PA State in Fundamentals of Artificial Intelligence. Also earned 3rd Place Regional in DECA Principles of Marketing.",
-        tags: ["10th Nat'l MIS", "8th Nat'l Programming", "1st PA State MIS", "3rd PA State AI", "Region 26 Treasurer", "DECA 3rd Place"],
+        imageFit: "contain",
+        summary: "1st Place PA State Champion & 10th Place National Winner in Management Information Systems (2026); 8th Place National Winner in Intro to Programming (2025).",
+        details: "Serving as FBLA Region 26 Regional Treasurer, overseeing regional conference budgets and student chapter allocations. At the state and national levels, won 1st Place PA State Champion and 10th Place Nationally in Management Information Systems (2026), 3rd Place PA State and 8th Place Nationally in Introduction to Programming (2025), and 3rd Place PA State in Fundamentals of Artificial Intelligence. Also placed 3rd Regionally in DECA Principles of Marketing.",
+        tags: ["10th Nat'l MIS", "8th Nat'l Programming", "1st PA State MIS", "3rd PA State AI", "Region 26 Treasurer"],
         metrics: "1st PA State | 8th & 10th Place Nationally",
         link: "https://www.credly.com/badges/4bc863de-348f-409d-92ae-2020ad48edf7/linked_in_profile",
-        linkText: "Verify Credly National Badge"
+        linkText: "Verify Credly National Badge",
+        secondaryLink: "https://www.linkedin.com/posts/aklavyakumar_fbla-fblanlc-managementinformationsystems-ugcPost-7478869082348601344-ot7V/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFXbmsIB-gLth7idAgpxxeTHCbyOXw-U7f8",
+        secondaryLinkText: "View LinkedIn NLC Post"
     },
     {
         id: "fbla-intro-programming-game",
         title: "The Destruction of the Possible Mission Force",
         category: "coding",
-        categoryName: "Game Architecture & Software",
+        categoryName: "Game Development",
         status: "8th Place National Game",
         image: "img/DTPMF.png",
-        summary: "Interactive game engineered in Python for FBLA Intro to Programming, winning 3rd in PA State and 8th Place Nationally.",
-        details: "Designed and programmed 'The Destruction of the Possible Mission Force', an interactive game featuring custom state machines, collision physics, and algorithmic progression. Awarded 3rd Place at the PA FBLA State Leadership Conference and 8th Place at the National Leadership Conference. Published on itch.io with full open-source repository on GitHub.",
-        tags: ["Python", "PyGame / RenPy", "itch.io Published", "8th Place National", "Open Source"],
-        metrics: "8th Place Nationally | Published on itch.io",
+        imageFit: "cover",
+        summary: "Standalone Python game built for the FBLA Intro to Programming competition, earning 3rd Place in Pennsylvania and 8th Place Nationally.",
+        details: "Architected and programmed 'The Destruction of the Possible Mission Force', an interactive game featuring custom state management, collision physics, and original level progression. Awarded 3rd Place at the Pennsylvania FBLA State Leadership Conference and 8th Place at the National Leadership Conference. Playable online via itch.io with full source code on GitHub.",
+        tags: ["Python", "PyGame / RenPy", "itch.io", "8th Place National", "Open Source"],
+        metrics: "8th Place Nationally | Playable on itch.io",
         link: "https://readingcookiesa.itch.io/the-destruction-of-the-possible-mission-force",
-        linkText: "Launch Game on itch.io"
+        linkText: "Play Game on itch.io",
+        secondaryLink: "https://github.com/nulladmin1/FBLA_Intro-to-Programming_2024-2025",
+        secondaryLinkText: "View GitHub Repository"
     },
     {
         id: "cv-coding-club-usaco",
-        title: "CVHS Coding Club & USACO / ACSL Curriculum",
+        title: "Cumberland Valley Coding Club & USACO Mentorship",
         category: "coding",
         categoryName: "Algorithms & Competitive Coding",
-        status: "70+ Coached | 4 USACO Silver",
+        status: "70+ Students | 4 USACO Silver",
         image: "img/cvcoding.png",
-        summary: "Founded CVHS Coding Club; formulated curriculum in Dynamic Programming, Graph Theory, and Greedy algorithms across 25+ workshops.",
-        details: "Founder (Grades 10, 11) and President of the Cumberland Valley High School Coding Club. Formulated a rigorous competitive programming curriculum covering Dynamic Programming (DP), Graph Theory, and Greedy algorithms. Led 25+ hands-on workshops and mock contests, coaching 70+ students to ACSL Finals and USACO Silver ranks (including 4 USACO Silver-ranked students directly mentored).",
+        imageFit: "contain",
+        summary: "Founded the CVHS Coding Club and built a curriculum in Dynamic Programming, Graph Theory, and Greedy algorithms across 25+ workshops.",
+        details: "Founded and serves as President of the Cumberland Valley High School Coding Club. Authored an algorithmic training curriculum covering Dynamic Programming, Graph Theory, and Greedy methods in C++ and Python. Hosted more than 25 workshops and mock competitions, training over 70 students for ACSL Finals and USACO divisions, with 4 club members advancing to USACO Silver.",
         tags: ["C++", "Python", "Dynamic Programming", "Graph Algorithms", "25+ Workshops", "4 USACO Silver Students"],
-        metrics: "25+ Workshops | 70+ Students Coached | 4 USACO Silver",
+        metrics: "25+ Workshops | 70+ Students | 4 USACO Silver",
         link: "https://fe4rless233.github.io/CVcodingclub/index.html",
-        linkText: "Visit CV Coding Club Platform"
+        linkText: "Visit CV Coding Club Website",
+        secondaryLink: "img/CVCodingClubBoard.pdf",
+        secondaryLinkText: "View Club Poster (PDF)"
     },
     {
         id: "penn-state-pulse-med",
         title: "Penn State College of Medicine PULSE Pathway",
         category: "biotech",
-        categoryName: "Clinical Medicine & Shadowing",
+        categoryName: "Clinical Medicine",
         status: "1 of 30 Selected Statewide",
         image: "img/PULSE.png",
-        summary: "Selected as 1 of 30 statewide participants for a 12-week longitudinal medical pathway at Penn State College of Medicine with 40+ clinical shadowing hours.",
-        details: "Selected as one of only 30 students statewide for Penn State College of Medicine's competitive 12-week PULSE longitudinal medical pathway curriculum (Sept 2025 - Dec 2025). Completed 40+ hours of clinical shadowing, interactive problem-based learning (PBL) medical case studies, and hospital community health projects.",
-        tags: ["1 of 30 Statewide", "40+ Hrs Clinical Shadowing", "Penn State Medicine", "Problem-Based Learning"],
+        imageFit: "cover",
+        summary: "Selected as 1 of 30 students across Pennsylvania for Penn State College of Medicine's 12-week clinical pathway with 40+ hours of physician shadowing.",
+        details: "Selected as one of 30 participants statewide for the 12-week PULSE medical pathway at Penn State College of Medicine. Completed more than 40 hours of clinical shadowing, problem-based learning (PBL) diagnostic case studies, and hospital community health initiatives.",
+        tags: ["Penn State Medicine", "1 of 30 Statewide", "40+ Hrs Clinical Shadowing", "Medical Case Studies"],
         metrics: "1 of 30 Selected Statewide | 40+ Clinical Hours",
         link: "img/PULSE.png",
-        linkText: "Inspect Official PULSE Credential"
+        linkText: "View Official PULSE Certificate"
     },
     {
         id: "abha-fullstack-platform",
-        title: "Full-Stack Bengali Community Platform & PA Food Bank",
+        title: "ABHA Full-Stack Web Platform & PA Food Bank Service",
         category: "community",
         categoryName: "Full-Stack Web & Civic Impact",
         status: "1,000+ Users | 14,000+ Meals",
         image: "img/abha.jpg",
-        summary: "Engineered and deployed the official React/Next.js community platform (abhaweb.org) serving 1,000+ users; raised funds for 14,000+ meals at PA Food Bank.",
-        details: "Serves as Webmaster and Volunteer Lead for the Association of Bengalis in Harrisburg Area (ABHA). Engineered, deployed, and maintained the official responsive React and Next.js web application (abhaweb.org) serving over 1,000+ local users. Concurrently completed 10+ years of dedicated service with the Central Pennsylvania Food Bank, sorting donations and leading youth fundraising drives that provided over 14,000 meals.",
+        imageFit: "cover",
+        summary: "Built and maintains the official React/Next.js web platform (abhaweb.org) serving 1,000+ residents; 10+ years of service at the Central PA Food Bank.",
+        details: "As Webmaster and Volunteer Lead for the Association of Bengalis in Harrisburg Area (ABHA), architected, deployed, and maintains the production React and Next.js web application (abhaweb.org) serving more than 1,000 regional users. Alongside cultural outreach, has volunteered for over 10 years with the Central Pennsylvania Food Bank, sorting food donations and leading youth fundraisers that have funded over 14,000 meals.",
         tags: ["React", "Next.js", "TypeScript", "1,000+ Active Users", "14,000+ Meals Funded", "10+ Years Service"],
         metrics: "1,000+ Platform Users | 14,000+ Meals Provided",
         link: "https://abhaweb.org/",
-        linkText: "Launch Live Platform (abhaweb.org)"
+        linkText: "Visit Live Platform (abhaweb.org)"
     }
 ];
 
@@ -163,7 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- 3. Real-Time 3D WebGL GLSL Topographic Wave Shader ---
 function initWebGLShader() {
-    // Support either #shader-canvas or legacy #particles-canvas ID
     const canvas = document.getElementById("shader-canvas") || document.getElementById("particles-canvas");
     if (!canvas) return;
     canvas.id = "shader-canvas";
@@ -186,15 +203,12 @@ function initWebGLShader() {
         }
     `;
 
-    // Custom 3D Topographic Wireframe & Elevation Field GLSL Fragment Shader
-    // Strictly Obsidian (#050507), Crimson (#ff2a4b), and Warm Amber (#ff9f1c) — Zero Purple/Blue
     const fragmentShaderSource = `
         precision highp float;
         uniform vec2 u_resolution;
         uniform float u_time;
         uniform float u_scroll;
 
-        // 3D Simplex-style procedural hash & noise
         vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
         vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
         vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
@@ -224,39 +238,28 @@ function initWebGLShader() {
 
         void main() {
             vec2 uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.y, u_resolution.x);
-            
-            // Perspective 3D plane projection
             vec2 p = uv * 2.4;
             p.y += u_scroll * 0.0012;
             
             float t = u_time * 0.18;
             
-            // Multi-octave 3D terrain elevation
             float e1 = snoise(p * 1.1 + vec2(t, t * 0.6));
             float e2 = 0.5 * snoise(p * 2.3 - vec2(t * 0.8, -t * 0.4));
             float e3 = 0.25 * snoise(p * 4.6 + vec2(0.0, t * 1.1));
             float elevation = e1 + e2 + e3;
 
-            // Topographic isolines (architectural contour lines)
             float contourFreq = 14.0;
             float lines = abs(fract(elevation * contourFreq) - 0.5);
             float contour = smoothstep(0.035, 0.01, lines);
 
-            // Secondary structural coordinate grid
             vec2 gridUV = abs(fract(p * 3.0) - 0.5);
             float gridLine = smoothstep(0.015, 0.004, min(gridUV.x, gridUV.y)) * 0.18;
 
-            // Base obsidian color (#050507)
             vec3 baseColor = vec3(0.02, 0.02, 0.028);
-            // Architectural crimson (#ff2a4b)
             vec3 crimson = vec3(1.0, 0.165, 0.294);
-            // Warm amber (#ff9f1c)
             vec3 amber = vec3(1.0, 0.624, 0.11);
 
-            // Blend isolines based on elevation height
             vec3 lineColor = mix(crimson, amber, clamp(elevation * 0.5 + 0.5, 0.0, 1.0));
-            
-            // Vignette depth attenuation so foreground text has maximum contrast
             float vignette = 1.0 - smoothstep(0.2, 1.45, length(uv));
             
             vec3 finalColor = baseColor + lineColor * contour * 0.24 * vignette + vec3(0.4, 0.45, 0.55) * gridLine * vignette;
@@ -380,12 +383,12 @@ function initTypewriter() {
 
     const phrases = [
         "Author of 'From Healing to Superhuman' (Published on Amazon)",
-        "CogniTrack BCI Lead: 500+ Neural Signal Datasets in PyTorch",
-        "IRO International Semifinalist (Top 10% of 10,000+ Entrants)",
-        "FTC 8468 The Javengers Lead |PA Top 40 Dean's List Semi-Finalist",
-        "FBLA 1st PA State & 8th / 10th Place National Winner",
-        "Penn State College of Medicine PULSE (1 of 30 Selected Statewide)",
-        "Scholastic Art & Writing Gold Key Winner for Personal Memoir"
+        "CogniTrack EEG BCI Lead: 500+ Neural Datasets in PyTorch",
+        "International Research Olympiad Semifinalist (Top 10% Worldwide)",
+        "FTC 8468 The Javengers Lead & FIRST Dean's List Semi-Finalist",
+        "FBLA 1st Place PA State & Dual Top-10 National Winner",
+        "Penn State College of Medicine PULSE Pathway Scholar",
+        "Scholastic Art & Writing Gold Key Winner"
     ];
 
     let phraseIdx = 0;
@@ -418,7 +421,7 @@ function initTypewriter() {
     type();
 }
 
-// --- 8. Project Grid Renderer (No Scroll Fade-In Cliche) ---
+// --- 8. Project Grid Renderer ---
 function renderProjects(projects) {
     const grid = document.getElementById("projects-grid");
     if (!grid) return;
@@ -437,7 +440,7 @@ function renderProjects(projects) {
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="project-card">
                 <div class="project-img-wrapper">
-                    <img src="${p.image}" alt="${p.title}" class="project-img" loading="lazy">
+                    <img src="${p.image}" alt="${p.title} - Aklavya Kumar" class="project-img" style="object-fit: ${p.imageFit || 'cover'};" loading="lazy">
                     <span class="project-status-badge">${p.status}</span>
                 </div>
                 <div class="project-body">
@@ -448,7 +451,7 @@ function renderProjects(projects) {
                         ${p.tags.map(t => `<span class="tech-pill">${t}</span>`).join('')}
                     </div>
                     <button class="btn-project-details" onclick="openProjectModal('${p.id}')">
-                        Inspect Specifications &amp; Credentials
+                        Inspect Specifications &amp; Links
                     </button>
                 </div>
             </div>
@@ -501,22 +504,29 @@ function openProjectModal(id) {
     const body = document.getElementById("modal-body-content");
     if (!modal || !body) return;
 
+    const secondaryBtnHTML = project.secondaryLink ? `
+        <a href="${project.secondaryLink}" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+            ${project.secondaryLinkText}
+        </a>
+    ` : "";
+
     body.innerHTML = `
         <div class="mb-3">
             <span class="mono-label">${project.categoryName}</span>
             <h2 class="h3 text-white mb-2">${project.title}</h2>
-            <p class="mono-meta mb-3">VERIFIED METRICS: ${project.metrics}</p>
+            <p class="mono-meta mb-3">HIGHLIGHTS: ${project.metrics}</p>
         </div>
-        <img src="${project.image}" alt="${project.title}" class="img-fluid mb-4 w-100" style="max-height: 290px; object-fit: cover; border: 1px solid var(--border-strong);">
-        <h4 class="mono-label">Technical Summary &amp; Architecture</h4>
+        <img src="${project.image}" alt="${project.title} - Aklavya Kumar" class="img-fluid mb-4 w-100" style="max-height: 320px; object-fit: ${project.imageFit || 'cover'}; background: #050507; border: 1px solid var(--border-strong);">
+        <h4 class="mono-label">Engineering &amp; Research Overview</h4>
         <p class="mb-4" style="line-height: 1.7;">${project.details}</p>
         
-        <h4 class="mono-label">Stack, Hardware &amp; Recognition</h4>
+        <h4 class="mono-label">Technologies &amp; Recognition</h4>
         <div class="tech-tags mb-4">
             ${project.tags.map(t => `<span class="tech-pill">${t}</span>`).join('')}
         </div>
 
-        <div class="d-flex justify-content-end">
+        <div class="d-flex flex-wrap justify-content-end gap-2">
+            ${secondaryBtnHTML}
             <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="btn-arch-primary btn-arch-sm">
                 ${project.linkText}
             </a>
