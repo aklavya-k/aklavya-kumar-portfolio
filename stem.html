@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aklavya Kumar | STEM & Robotics Showcase. FTC 8468 The Javengers, Dean's List Semi-Finalist, Science Olympiad Robot Tour, FIRST Global Mentor.">
-    <title>Aklavya Kumar | STEM & Robotics</title>
+    <meta name="description" content="Aklavya Kumar | Robotics & Science Olympiad Engineering. FTC 8468 The Javengers Lead, PA Top 40 Dean's List Semi-Finalist, 30+ SciOly Medals, Hovercraft, Electric Vehicle, Robot Tour, Helicopter.">
+    <title>Aklavya Kumar | Robotics &amp; Science Olympiad Engineering</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,25 +16,25 @@
 </head>
 <body>
     <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="shader-canvas"></canvas>
 
     <!-- Navigation Bar -->
     <nav class="navbar-custom">
         <div class="container d-flex align-items-center justify-content-between">
             <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
+                AKLAVYA <span>KUMAR</span>
             </a>
-            <div class="d-none d-lg-flex align-items-center gap-2">
-                <a href="index.html" class="nav-link-custom">Home</a>
-                <a href="about.html" class="nav-link-custom">About</a>
-                <a href="stem.html" class="nav-link-custom active">STEM &amp; Robotics</a>
-                <a href="academics.html" class="nav-link-custom">Academics &amp; Research</a>
-                <a href="community.html" class="nav-link-custom">Community</a>
-                <a href="aspirations.html" class="nav-link-custom">Skills &amp; Vision</a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html" class="nav-link-custom">Index</a>
+                <a href="about.html" class="nav-link-custom">Profile</a>
+                <a href="stem.html" class="nav-link-custom active">Robotics &amp; SciOly</a>
+                <a href="academics.html" class="nav-link-custom">Research &amp; Honors</a>
+                <a href="community.html" class="nav-link-custom">Civic Impact</a>
+                <a href="aspirations.html" class="nav-link-custom">BCI &amp; Stack</a>
             </div>
             <div class="d-flex align-items-center gap-2">
-                <a href="contact.html" class="btn-nav-action d-none d-sm-inline-flex">Contact</a>
-                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu">
+                <a href="contact.html" class="btn-arch-primary btn-arch-sm d-none d-sm-inline-flex">Contact</a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -45,136 +45,124 @@
     <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
     <div id="mobile-drawer" class="mobile-drawer">
         <div class="mobile-drawer-header">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
         </div>
-
         <div class="mobile-drawer-nav">
-            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-user"></i> About Me</a>
-            <a href="stem.html" class="mobile-drawer-link active"><i class="fas fa-robot"></i> STEM &amp; Robotics</a>
-            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-graduation-cap"></i> Academics &amp; Research</a>
-            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-hands-helping"></i> Community &amp; Culture</a>
-            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-brain"></i> Skills &amp; Vision</a>
-            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-terminal"></i> Index</a>
+            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-id-card"></i> Profile</a>
+            <a href="stem.html" class="mobile-drawer-link active"><i class="fas fa-gears"></i> Robotics &amp; SciOly</a>
+            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-award"></i> Research &amp; Honors</a>
+            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-building-columns"></i> Civic Impact</a>
+            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-wave-square"></i> BCI &amp; Stack</a>
+            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-paper-plane"></i> Contact</a>
         </div>
-
         <div class="mobile-drawer-footer">
-            <a href="contact.html" class="btn-hero-primary w-100 justify-content-center mb-3">
-                <i class="fas fa-paper-plane me-1"></i> Get In Touch
-            </a>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+            <a href="contact.html" class="btn-arch-primary w-100 justify-content-center mb-3">Direct Inquiry</a>
         </div>
     </div>
 
-    <!-- STEM Hero Banner -->
+    <!-- Main STEM Section -->
     <section class="section-padding">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag">Engineering &amp; Competition</span>
-                <h2 class="section-title">STEM &amp; Robotics Excellence</h2>
-                <p class="section-desc">FTC 8468 The Javengers Lead, Dean's List Semi-Finalist, Science Olympiad Robot Tour Developer, &amp; FIRST Global Mentor.</p>
+            <div class="section-header">
+                <span class="mono-label">MODULE 01 // AUTONOMOUS KINEMATICS &amp; HARDWARE</span>
+                <h1 class="section-title">FIRST Robotics &amp; Science Olympiad</h1>
+                <p class="section-desc">Millimeter-precise Java autonomous pathing, electromechanical assembly, and competitive precision apparatuses.</p>
             </div>
 
             <!-- FTC 8468 The Javengers Spotlight -->
             <div class="row align-items-center g-5 mb-5">
-                <div class="col-lg-6 scroll-reveal-left">
-                    <div class="glass-card p-3">
-                        <img src="img/ftc-team.jpg" alt="FTC 8468 The Javengers" class="img-fluid rounded-3 w-100">
+                <div class="col-lg-6">
+                    <div class="arch-panel p-2">
+                        <img src="img/ftc-team.jpg" alt="FIRST Tech Challenge Team" class="img-fluid w-100" style="border: 1px solid var(--border-strong);">
                     </div>
                 </div>
-                <div class="col-lg-6 scroll-reveal-right">
-                    <span class="badge bg-danger px-3 py-2 rounded-pill mb-3">CURRENT TEAM: FTC 8468 THE JAVENGERS</span>
-                    <h3 class="h2 mb-2">Build &amp; Programming Lead</h3>
-                    <p class="text-accent fw-bold small mb-3"><i class="fas fa-medal me-1"></i> Dean's List Semi-Finalist &bull; Mechanicsburg, PA, USA</p>
-                    <p class="text-secondary mb-3">
-                        Aklavya is Build &amp; Programming Lead for <strong>FTC 8468 - The Javengers</strong>, a premier family/community FIRST Tech Challenge robotics team based in Mechanicsburg, PA (Rookie Year: 2014, data from FIRST). Previously competed with FTC 14464 BotBusters.
+                <div class="col-lg-6">
+                    <span class="mono-label">AUG 2018 - PRESENT // 10 HRS/WK, 36 WKS/YR</span>
+                    <h2 class="h2 mb-2">FIRST Tech Challenge: Build &amp; Programming Lead</h2>
+                    <p class="mono-meta mb-3">FTC 8468 THE JAVENGERS (CURRENT) &amp; FTC 14464 BOTBUSTERS // DEAN'S LIST SEMI-FINALIST (TOP 40 STATEWIDE)</p>
+                    <p class="mb-3">
+                        Programmed millimeter-precise Java autonomous control systems utilizing <strong>RoadRunner</strong>, <strong>PedroPathing</strong>, and <strong>OpenCV</strong> computer vision. Engineered complex intake, multi-stage lift, and scoring mechanisms in OnShape and Autodesk Fusion 360 for state-finalist robots.
+                    </p>
+                    <p class="mb-4">
+                        Led the team to <strong>3 PA State Championship Finals appearances</strong> and <strong>12 competitive awards</strong> (including Control, Inspire, Motivate, Connect, and Think awards). Coached and directed summer robotics camps for <strong>40+ Cumberland Valley youth</strong> in robot assembly and programming fundamentals.
                     </p>
 
-                    <div class="glass-card p-3 mb-4">
-                        <h5 class="h6 text-white mb-2"><i class="fas fa-handshake me-2 text-cyan"></i> Generous Team Sponsors:</h5>
-                        <div class="tech-tags">
-                            <span class="tech-pill" style="color: var(--accent-cyan);">Optum</span>
-                            <span class="tech-pill" style="color: var(--accent-cyan);">TE Connectivity</span>
-                            <span class="tech-pill" style="color: var(--accent-cyan);">Bank of America</span>
-                            <span class="tech-pill" style="color: var(--accent-cyan);">UnitedHealth Group</span>
+                    <div class="arch-panel p-3 mb-4">
+                        <span class="mono-label">FTC 8468 CORPORATE SPONSORS (MECHANICSBURG, PA // ROOKIE YEAR 2014)</span>
+                        <div class="tech-tags mb-0">
+                            <span class="tech-pill">Optum</span>
+                            <span class="tech-pill">TE Connectivity</span>
+                            <span class="tech-pill">Bank of America</span>
+                            <span class="tech-pill">UnitedHealth Group</span>
                         </div>
                     </div>
 
-                    <ul class="list-unstyled text-secondary mb-4 small">
-                        <li class="mb-2"><i class="fas fa-check-circle text-accent me-2"></i> <strong>Dean's List Semi-Finalist:</strong> Recognized for technical leadership, autonomous programming, and community mentorship.</li>
-                        <li class="mb-2"><i class="fas fa-cogs text-accent me-2"></i> <strong>Autonomous Control Architecture:</strong> Millimeter-level precision driving modules written in Java utilizing RoadRunner, PedroPathing, and OpenCV computer vision.</li>
-                        <li class="mb-2"><i class="fas fa-trophy text-accent me-2"></i> <strong>State Championship Honors:</strong> 3 consecutive PA State Championship finals appearances; Motivate, Connect, Inspire, Control, and Think team award recipient; Winning Alliance Captain.</li>
-                    </ul>
-
-                    <div class="d-flex gap-3">
-                        <a href="http://www.pacar-robotics.org" target="_blank" rel="noopener noreferrer" class="btn btn-hero-primary btn-sm">
-                            <i class="fas fa-globe me-1"></i> PACAR Robotics (pacar-robotics.org)
-                        </a>
-                    </div>
+                    <a href="http://www.pacar-robotics.org" target="_blank" rel="noopener noreferrer" class="btn-arch-primary btn-arch-sm">
+                        PACAR Robotics (pacar-robotics.org)
+                    </a>
                 </div>
             </div>
 
-            <!-- Science Olympiad Robot Tour Spotlight -->
-            <div class="row align-items-center g-5 mt-4 mb-5">
-                <div class="col-lg-6 order-lg-2 scroll-reveal-right">
-                    <div class="glass-card p-3">
-                        <img src="img/robotTour.jpg" alt="Science Olympiad Robot Tour" class="img-fluid rounded-3 w-100">
+            <!-- Science Olympiad Spotlight -->
+            <div class="row align-items-center g-5 mt-5 mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="arch-panel p-2">
+                        <img src="img/robotTour.jpg" alt="Science Olympiad Robot Tour Vehicle" class="img-fluid w-100" style="border: 1px solid var(--border-strong);">
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-1 scroll-reveal-left">
-                    <span class="badge bg-info text-dark px-3 py-2 rounded-pill mb-3">SCIENCE OLYMPIAD VARSITY DEVELOPER</span>
-                    <h3 class="h2 mb-3">Robot Tour &amp; National Team Rank</h3>
-                    <p class="text-secondary mb-3">
-                        Varsity competitor and developer for Cumberland Valley High School Science Olympiad. Engineered the autonomous <strong>Robot Tour</strong> vehicle (open-source hardware &amp; software on GitHub).
+                <div class="col-lg-6 order-lg-1">
+                    <span class="mono-label">SEP 2022 - PRESENT // VARSITY COMPETITOR &amp; LEAD DEVELOPER</span>
+                    <h2 class="h2 mb-2">CVHS Science Olympiad: 30+ Medals &amp; Top-20 Nationals</h2>
+                    <p class="mono-meta mb-3">19TH PLACE NATIONALS (2024) // 20TH PLACE NATIONALS (2025) // MIT, UPENN, SOLON, VALLEY FORGE &amp; PSU INVITATIONALS</p>
+                    <p class="mb-4">
+                        Led a 20+ member varsity team to consecutive Top-20 National tournament finishes and earned <strong>30+ individual and team build/lab medals</strong> across elite national invitationals. Engineered sustainable development infrastructure and calibrated four competitive precision apparatuses:
                     </p>
-                    <p class="text-secondary mb-4">
-                        Led 50+ member team to National Tournaments, achieving an outstanding <strong>19th Place Team Rank in 2024</strong> and <strong>20th Place Team Rank in 2025</strong> in the United States. Earned 20+ individual medals and 15+ team awards across UPenn, MIT, Penn State, and Nationals.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="https://github.com/Fe4Rless233/Robot-Tour" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                            <i class="fab fa-github me-1"></i> Robot Tour GitHub Repository
-                        </a>
-                    </div>
+                    <a href="https://github.com/Fe4Rless233/Robot-Tour" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+                        Inspect Robot Tour GitHub Repository
+                    </a>
                 </div>
             </div>
 
-            <!-- FIRST Global Mentor Grid -->
-            <div class="row g-4 mt-4">
-                <div class="col-md-6 scroll-reveal-scale delay-1">
-                    <div class="glass-card p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <i class="fas fa-globe-americas fa-2x text-accent"></i>
-                            <div>
-                                <h4 class="h5 mb-0">FIRST Global Mentor</h4>
-                                <span class="small text-cyan">International STEM Outreach</span>
-                            </div>
-                        </div>
-                        <p class="text-secondary small mb-0">
-                            Mentoring international student teams in Niger, Canada, and Bolivia for Olympics-style robotics challenges. Providing virtual CAD &amp; programming coaching to empower youth in developing nations.
+            <!-- 4 Precision Engineering Apparatuses Grid -->
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">APPARATUS 01 // 3RD PLACE AT MIT INVITATIONAL</span>
+                        <h3 class="h4 mb-2">Hovercraft</h3>
+                        <p class="mb-0 small">
+                            Engineered a lightweight, thrust-controlled air-cushion vehicle utilizing optimized lift-to-weight ratios and propulsion vectoring for maximum speed control and directional stability.
                         </p>
                     </div>
                 </div>
 
-                <div class="col-md-6 scroll-reveal-scale delay-2">
-                    <div class="glass-card p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <i class="fas fa-tools fa-2x text-warning"></i>
-                            <div>
-                                <h4 class="h5 mb-0">Autonomous Kinematics &amp; CAD</h4>
-                                <span class="small text-cyan">OnShape &amp; PedroPathing</span>
-                            </div>
-                        </div>
-                        <p class="text-secondary small mb-0">
-                            Proficient in OnShape 3D CAD modeling, electro-mechanical assembly, REV Robotics hardware integration, trajectory generation, and sensor feedback loops.
+                <div class="col-md-6">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">APPARATUS 02 // 4TH PLACE AT PENN STATE</span>
+                        <h3 class="h4 mb-2">Electric Vehicle</h3>
+                        <p class="mb-0 small">
+                            Designed and tuned a battery-powered vehicle featuring precision motor control, custom gear trains, and an electrical braking system to achieve exact distance stopping accuracy, obstacle avoidance, and energy efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">APPARATUS 03 // 5TH PLACE INVITATIONAL MEDALIST</span>
+                        <h3 class="h4 mb-2">Robot Tour</h3>
+                        <p class="mb-0 small">
+                            Programmed an autonomous, sensor-guided mobile vehicle to navigate precise obstacle courses and calculate exact mapping vectors under strict timing constraints.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">APPARATUS 04 // FLIGHT ENDURANCE HARDWARE</span>
+                        <h3 class="h4 mb-2">Helicopter</h3>
+                        <p class="mb-0 small">
+                            Built rubber-band powered endurance aircraft focused on ultra-low-mass airframes, high-aspect-ratio propellers, and meticulous torque-to-weight management to maximize flight duration.
                         </p>
                     </div>
                 </div>
@@ -182,15 +170,12 @@
         </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
         <div class="container text-center">
-            <p class="mb-1"><strong>Aklavya Kumar</strong> &bull; Class of 2027 &bull; Cumberland Valley High School</p>
-            <p class="small text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Aklavya Kumar. Driven by Innovation, Guided by Purpose.</p>
+            <p class="mono-meta mb-1">AKLAVYA KUMAR // CUMBERLAND VALLEY HIGH SCHOOL (BATCH OF JUNE 2027)</p>
+            <p class="mono-meta mb-0">aklavyakumr@gmail.com // +1 (233) 667-3778</p>
         </div>
     </footer>
 

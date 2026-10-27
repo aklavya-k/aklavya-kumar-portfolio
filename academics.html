@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aklavya Kumar | Academics & Research. FBLA Dual National Top 10 Placer, IRO World Semi-Finalist (Top 10%), Penn State Medicine PULSE Scholar, CV Coding Club Founder.">
-    <title>Aklavya Kumar | Academics & Research</title>
+    <meta name="description" content="Aklavya Kumar | Research, Internships & Academic Honors. IRO International Semifinalist (Top 10% of 10k+ entrants), Penn State PULSE (1 of 30 statewide), FBLA Dual National Top 10, CVHS Coding Club Founder.">
+    <title>Aklavya Kumar | Research, Internships &amp; Academic Honors</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,27 +16,23 @@
 </head>
 <body>
     <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="shader-canvas"></canvas>
 
     <!-- Navigation Bar -->
     <nav class="navbar-custom">
         <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <div class="d-none d-lg-flex align-items-center gap-2">
-                <a href="index.html" class="nav-link-custom">Home</a>
-                <a href="about.html" class="nav-link-custom">About</a>
-                <a href="stem.html" class="nav-link-custom">STEM &amp; Robotics</a>
-                <a href="academics.html" class="nav-link-custom active">Academics &amp; Research</a>
-                <a href="community.html" class="nav-link-custom">Community</a>
-                <a href="aspirations.html" class="nav-link-custom">Skills &amp; Vision</a>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html" class="nav-link-custom">Index</a>
+                <a href="about.html" class="nav-link-custom">Profile</a>
+                <a href="stem.html" class="nav-link-custom">Robotics &amp; SciOly</a>
+                <a href="academics.html" class="nav-link-custom active">Research &amp; Honors</a>
+                <a href="community.html" class="nav-link-custom">Civic Impact</a>
+                <a href="aspirations.html" class="nav-link-custom">BCI &amp; Stack</a>
             </div>
             <div class="d-flex align-items-center gap-2">
-                <a href="contact.html" class="btn-nav-action d-none d-sm-inline-flex">Contact</a>
-                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <a href="contact.html" class="btn-arch-primary btn-arch-sm d-none d-sm-inline-flex">Contact</a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
@@ -45,177 +41,164 @@
     <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
     <div id="mobile-drawer" class="mobile-drawer">
         <div class="mobile-drawer-header">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
         </div>
-
         <div class="mobile-drawer-nav">
-            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-user"></i> About Me</a>
-            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-robot"></i> STEM &amp; Robotics</a>
-            <a href="academics.html" class="mobile-drawer-link active"><i class="fas fa-graduation-cap"></i> Academics &amp; Research</a>
-            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-hands-helping"></i> Community &amp; Culture</a>
-            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-brain"></i> Skills &amp; Vision</a>
-            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-terminal"></i> Index</a>
+            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-id-card"></i> Profile</a>
+            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-gears"></i> Robotics &amp; SciOly</a>
+            <a href="academics.html" class="mobile-drawer-link active"><i class="fas fa-award"></i> Research &amp; Honors</a>
+            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-building-columns"></i> Civic Impact</a>
+            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-wave-square"></i> BCI &amp; Stack</a>
+            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-paper-plane"></i> Contact</a>
         </div>
-
         <div class="mobile-drawer-footer">
-            <a href="contact.html" class="btn-hero-primary w-100 justify-content-center mb-3">
-                <i class="fas fa-paper-plane me-1"></i> Get In Touch
-            </a>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+            <a href="contact.html" class="btn-arch-primary w-100 justify-content-center mb-3">Direct Inquiry</a>
         </div>
     </div>
 
-    <!-- Section Header -->
     <section class="section-padding">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag">Scholarship &amp; Global Honors</span>
-                <h2 class="section-title">Academic &amp; Research Achievements</h2>
-                <p class="section-desc">Cumberland Valley High School Senior (Class of 2027), IRO World Semi-Finalist, FBLA National Placer, Penn State Medicine PULSE Scholar.</p>
+            <div class="section-header">
+                <span class="mono-label">MODULE 02 // RESEARCH, INTERNSHIPS &amp; COMPETITIVE DISTINCTIONS</span>
+                <h1 class="section-title">Academic Leadership &amp; Clinical Pathways</h1>
+                <p class="section-desc">Cumberland Valley High School (Aug 2021 - Present, Batch of June 2027). Pioneering institutional research programs, algorithmic education, and medical shadowing.</p>
             </div>
 
-            <!-- IRO & Research Feature -->
+            <!-- IRO World Semifinalist & CVHS Chapter -->
             <div class="row align-items-center g-5 mb-5">
-                <div class="col-lg-6 scroll-reveal-left">
-                    <div class="glass-card p-3 text-center">
-                        <img src="img/IRO.jpg" alt="International Research Olympiad (IRO) Official Poster" class="img-fluid rounded-3 w-100" style="max-height: 380px; object-fit: contain;">
-                        <div class="mt-3">
-                            <a href="img/IRO-2026-Certificate-Aklavya.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-hero-primary btn-sm">
-                                <i class="fas fa-file-pdf me-1"></i> View Official IRO Certificate (PDF)
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 scroll-reveal-right">
-                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3">WORLD SEMI-FINALIST (TOP 10% IN WORLD)</span>
-                    <h3 class="h2 mb-3">CV International Research Olympiad (IRO)</h3>
-                    <p class="text-secondary mb-3">
-                        Aklavya is personally an <strong>International Research Olympiad (IRO) World Semi-Finalist</strong>, ranking in the <strong>Top 10% of the world</strong> in competitive scientific research and data interpretation.
-                    </p>
-                    <p class="text-secondary mb-4">
-                        Founder and President of the CVHS International Research Olympiad Club. He guides high school researchers through experimental design, quantitative data processing, academic writing, and publishing research papers for global science competitions.
-                    </p>
-                    <a href="img/IRO-2026-Certificate-Aklavya.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                        <i class="fas fa-award me-1"></i> IRO Semi-Finalist Certificate (PDF)
-                    </a>
-                </div>
-            </div>
-
-            <!-- FBLA Dual National Honors & Published Game (DTPMF.png) -->
-            <div class="row align-items-center g-5 mb-5">
-                <div class="col-lg-6 order-lg-2 scroll-reveal-right">
-                    <div class="glass-card p-3 text-center mb-3">
-                        <img src="img/DTPMF.png" alt="The Destruction of the Possible Mission Force Game" class="img-fluid rounded-3 w-100" style="max-height: 260px; object-fit: cover;">
-                        <span class="small text-muted mt-2 d-block">FBLA National 8th Place Game Artwork</span>
-                    </div>
-
-                    <div class="glass-card p-4">
-                        <h4 class="h5 text-white mb-3"><i class="fas fa-trophy text-accent me-2"></i> FBLA Credentials &amp; Published Game</h4>
-                        
-                        <div class="mb-3">
-                            <h6 class="text-white mb-1">Intro to Programming National 8th Place Game:</h6>
-                            <p class="small text-secondary mb-2">Developed 'The Destruction of the Possible Mission Force' game published on itch.io &amp; GitHub.</p>
-                            <div class="d-flex flex-wrap gap-2 mb-3">
-                                <a href="https://readingcookiesa.itch.io/the-destruction-of-the-possible-mission-force" target="_blank" rel="noopener noreferrer" class="btn btn-hero-primary btn-sm">
-                                    <i class="fas fa-gamepad me-1"></i> Play Game on itch.io
-                                </a>
-                                <a href="https://github.com/nulladmin1/FBLA_Intro-to-Programming_2024-2025" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                                    <i class="fab fa-github me-1"></i> GitHub Codebase
-                                </a>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h6 class="text-white mb-1">Management Info Systems 10th National &amp; State Win:</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <a href="https://www.credly.com/badges/4bc863de-348f-409d-92ae-2020ad48edf7/linked_in_profile" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                                    <i class="fas fa-certificate me-1"></i> Credly Verified Badge
-                                </a>
-                                <a href="https://www.linkedin.com/posts/aklavyakumar_fbla-fblanlc-managementinformationsystems-ugcPost-7478869082348601344-ot7V/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFXbmsIB-gLth7idAgpxxeTHCbyOXw-U7f8" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                                    <i class="fab fa-linkedin me-1"></i> LinkedIn Win Announcement
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 order-lg-1 scroll-reveal-left">
-                    <span class="badge bg-danger px-3 py-2 rounded-pill mb-3">FBLA REGION 26 TREASURER</span>
-                    <h3 class="h2 mb-3">FBLA Dual National Top 10</h3>
-                    <p class="text-secondary mb-3">
-                        Placed <strong>8th Nationally</strong> in Introduction to Programming (2025) and <strong>10th Nationally</strong> in Management Information Systems (2026) at the FBLA National Leadership Conference (NLC).
-                    </p>
-                    <p class="text-secondary mb-0">
-                        1st Place PA State Champion in Management Information Systems (2026), 3rd Place in Intro to Programming, and 3rd Place in Fundamentals of Artificial Intelligence. Active DECA PA State Competition Qualifier.
-                    </p>
-                </div>
-            </div>
-
-            <!-- CV Coding Club & Penn State PULSE Grid -->
-            <div class="row g-4 mt-4">
-                <div class="col-md-6 scroll-reveal-scale delay-1">
-                    <div class="glass-card p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <i class="fas fa-laptop-code fa-2x text-accent"></i>
-                            <div>
-                                <h4 class="h5 mb-0">CV Coding Club Founder &amp; President</h4>
-                                <span class="small text-cyan">4 USACO Silver Students Coached</span>
-                            </div>
-                        </div>
-                        <p class="text-secondary small mb-3">
-                            Founded CV Coding Club and built structured USACO/ACSL curriculum. Coached members through algorithmic problem solving, training <strong>4 members to reach USACO Silver rank</strong>.
-                        </p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <a href="https://fe4rless233.github.io/CVcodingclub/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-hero-primary btn-sm">
-                                <i class="fas fa-globe me-1"></i> Coding Club Site
-                            </a>
-                            <a href="img/CVCodingClubBoard.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                                <i class="fas fa-file-pdf me-1"></i> View Board Poster (PDF)
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 scroll-reveal-scale delay-2">
-                    <div class="glass-card p-4 h-100">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <i class="fas fa-user-md fa-2x text-info"></i>
-                            <div>
-                                <h4 class="h5 mb-0">Penn State Medicine PULSE Program</h4>
-                                <span class="small text-cyan">12-Week Longitudinal Scholar</span>
-                            </div>
-                        </div>
-                        <p class="text-secondary small mb-3">
-                            Competitively selected for Penn State College of Medicine's 12-week PULSE curriculum involving clinical shadowing, lectures, and biomedical research.
-                        </p>
-                        <a href="img/PULSE.png" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary btn-sm">
-                            <i class="fas fa-image me-1"></i> View Official PULSE Certificate
+                <div class="col-lg-5">
+                    <div class="arch-panel p-3 text-center">
+                        <img src="img/IRO.jpg" alt="International Research Olympiad Official Poster" class="img-fluid w-100 mb-3" style="max-height: 360px; object-fit: contain; border: 1px solid var(--border-strong);">
+                        <a href="img/IRO-2026-Certificate-Aklavya.pdf" target="_blank" rel="noopener noreferrer" class="btn-arch-primary btn-arch-sm w-100 justify-content-center">
+                            Inspect Official IRO Certificate (PDF)
                         </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <span class="mono-label">INTERNATIONAL SEMIFINALIST // TOP 10% OF 10,000+ ENTRANTS</span>
+                    <h2 class="h2 mb-2">CVHS International Research Olympiad (IRO) Club</h2>
+                    <p class="mono-meta mb-3">CHAPTER FOUNDER &amp; PRESIDENT // AUG 2025 - PRESENT (3 HRS/WK, 25 WKS/YR)</p>
+                    <p class="mb-3">
+                        Personally achieved <strong>International Semifinalist</strong> standing in the International Research Olympiad, placing in the <strong>Top 10% globally among 10,000+ entrants</strong>.
+                    </p>
+                    <p class="mb-0">
+                        Pioneered Cumberland Valley High School's first research program. Mentored <strong>more than 60 peers</strong> in rigorous quantitative, qualitative, and mixed-method experimental design, Python and pandas data analytics, and scientific paper writing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FBLA Dual National Top 10 & Published Game -->
+            <div class="row align-items-center g-5 mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="arch-panel p-3 mb-3">
+                        <img src="img/DTPMF.png" alt="The Destruction of the Possible Mission Force" class="img-fluid w-100 mb-2" style="max-height: 240px; object-fit: cover; border: 1px solid var(--border-strong);">
+                        <span class="mono-meta d-block">FBLA NATIONAL 8TH PLACE GAME: THE DESTRUCTION OF THE POSSIBLE MISSION FORCE</span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="https://readingcookiesa.itch.io/the-destruction-of-the-possible-mission-force" target="_blank" rel="noopener noreferrer" class="btn-arch-primary btn-arch-sm">
+                            Launch Game (itch.io)
+                        </a>
+                        <a href="https://github.com/nulladmin1/FBLA_Intro-to-Programming_2024-2025" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+                            GitHub Source
+                        </a>
+                        <a href="https://www.credly.com/badges/4bc863de-348f-409d-92ae-2020ad48edf7/linked_in_profile" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+                            Credly National Badge
+                        </a>
+                        <a href="https://www.linkedin.com/posts/aklavyakumar_fbla-fblanlc-managementinformationsystems-ugcPost-7478869082348601344-ot7V/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFXbmsIB-gLth7idAgpxxeTHCbyOXw-U7f8" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+                            LinkedIn NLC Post
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-1">
+                    <span class="mono-label">FBLA REGION 26 TREASURER // NATIONAL &amp; STATE CHAMPION</span>
+                    <h2 class="h2 mb-2">Future Business Leaders of America &amp; DECA</h2>
+                    <p class="mono-meta mb-3">AUG 2025 - PRESENT // 3 HRS/WK, 28 WKS/YR</p>
+                    <p class="mb-3">
+                        Manages Region 26 financial accounts and event budgets, organizing funds for the Regional Leadership Conference (RLC) and analyzing spending to optimize resource allocation across student initiatives.
+                    </p>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><strong>1st Place PA State &amp; 10th Place National Winner:</strong> Management Information Systems (2026)</li>
+                        <li class="mb-2"><strong>3rd Place PA State &amp; 8th Place National Winner:</strong> Introduction to Programming (2025)</li>
+                        <li class="mb-2"><strong>3rd Place PA State Competition:</strong> Fundamentals of Artificial Intelligence</li>
+                        <li class="mb-0"><strong>3rd Place Regional Competition:</strong> DECA Principles of Marketing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CVHS Coding Club, PSU PULSE, JLC, Scholastic & Public Speaking Grid -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="arch-panel h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="mono-label">FOUNDER (10, 11) &amp; PRESIDENT // 4 HRS/WK, 28 WKS/YR</span>
+                            <h3 class="h4 mb-2">CVHS Coding Club</h3>
+                            <p class="small mb-3">
+                                Founded competitive coding club at Cumberland Valley High School. Formulated a structured ACSL and USACO curriculum in Dynamic Programming (DP), Graph Theory, and Greedy algorithms. Led <strong>25+ workshops</strong> with mock contests and coached <strong>70+ students</strong> to ACSL Finals and USACO Silver ranks (including <strong>4 USACO Silver-ranked students</strong>).
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="https://fe4rless233.github.io/CVcodingclub/index.html" target="_blank" rel="noopener noreferrer" class="btn-arch-primary btn-arch-sm">
+                                Coding Club Website
+                            </a>
+                            <a href="img/CVCodingClubBoard.pdf" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+                                Board Poster (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="arch-panel h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="mono-label">CLINICAL INTERNSHIP // SEP 2025 - DEC 2025</span>
+                            <h3 class="h4 mb-2">Penn State College of Medicine: PULSE</h3>
+                            <p class="small mb-3">
+                                Selected as <strong>1 of 30 statewide participants</strong> for a competitive 12-week longitudinal medical pathway curriculum. Completed <strong>40+ hours of clinical shadowing</strong>, interactive problem-based learning (PBL) medical cases, and hospital community projects.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="img/PULSE.png" target="_blank" rel="noopener noreferrer" class="btn-arch-secondary btn-arch-sm">
+                                Inspect Official PULSE Credential
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">CIVIC COHORT // SEP 2025 - APR 2026</span>
+                        <h3 class="h4 mb-2">Junior Leadership Cumberland (JLC)</h3>
+                        <p class="small mb-0">
+                            Selected from a competitive peer pool for an 8-month leadership cohort. Executed <strong>10+ leadership workshops</strong>, team icebreakers, and civic engagement initiatives with area student leaders emphasizing project management and mentorship.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">LITERARY ARTS &amp; PUBLIC ORATORY</span>
+                        <h3 class="h4 mb-2">Scholastic Gold Key &amp; North South Foundation</h3>
+                        <p class="small mb-2">
+                            <strong>Scholastic Art &amp; Writing Awards:</strong> Awarded the Gold Key for Personal Memoir (Top Regional Honor and National Qualifier).
+                        </p>
+                        <p class="small mb-0">
+                            <strong>North South Foundation:</strong> 2nd Place Regional Winner in Senior Public Speaking (2025 and 2026).
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
         <div class="container text-center">
-            <p class="mb-1"><strong>Aklavya Kumar</strong> &bull; Class of 2027 &bull; Cumberland Valley High School</p>
-            <p class="small text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Aklavya Kumar. Driven by Innovation, Guided by Purpose.</p>
+            <p class="mono-meta mb-1">AKLAVYA KUMAR // CUMBERLAND VALLEY HIGH SCHOOL (BATCH OF JUNE 2027)</p>
+            <p class="mono-meta mb-0">aklavyakumr@gmail.com // +1 (233) 667-3778</p>
         </div>
     </footer>
 

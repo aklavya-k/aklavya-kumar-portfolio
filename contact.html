@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Aklavya Kumar | High School Senior (Class of 2027) at Cumberland Valley High School. Email, Phone, LinkedIn, GitHub, and FTC 8468 The Javengers inquiries.">
-    <title>Aklavya Kumar | Contact & Connect</title>
+    <meta name="description" content="Contact Aklavya Kumar | High School Senior (Batch of June 2027) at Cumberland Valley High School. Direct inquiries for research, robotics, and engineering.">
+    <title>Aklavya Kumar | Direct Contact</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,27 +16,23 @@
 </head>
 <body>
     <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="shader-canvas"></canvas>
 
     <!-- Navigation Bar -->
     <nav class="navbar-custom">
         <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <div class="d-none d-lg-flex align-items-center gap-2">
-                <a href="index.html" class="nav-link-custom">Home</a>
-                <a href="about.html" class="nav-link-custom">About</a>
-                <a href="stem.html" class="nav-link-custom">STEM &amp; Robotics</a>
-                <a href="academics.html" class="nav-link-custom">Academics &amp; Research</a>
-                <a href="community.html" class="nav-link-custom">Community</a>
-                <a href="aspirations.html" class="nav-link-custom">Skills &amp; Vision</a>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html" class="nav-link-custom">Index</a>
+                <a href="about.html" class="nav-link-custom">Profile</a>
+                <a href="stem.html" class="nav-link-custom">Robotics &amp; SciOly</a>
+                <a href="academics.html" class="nav-link-custom">Research &amp; Honors</a>
+                <a href="community.html" class="nav-link-custom">Civic Impact</a>
+                <a href="aspirations.html" class="nav-link-custom">BCI &amp; Stack</a>
             </div>
             <div class="d-flex align-items-center gap-2">
-                <a href="contact.html" class="btn-nav-action active d-none d-sm-inline-flex">Contact</a>
-                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <a href="contact.html" class="btn-arch-primary btn-arch-sm d-none d-sm-inline-flex">Contact</a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
@@ -45,115 +41,106 @@
     <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
     <div id="mobile-drawer" class="mobile-drawer">
         <div class="mobile-drawer-header">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
         </div>
-
         <div class="mobile-drawer-nav">
-            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-user"></i> About Me</a>
-            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-robot"></i> STEM &amp; Robotics</a>
-            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-graduation-cap"></i> Academics &amp; Research</a>
-            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-hands-helping"></i> Community &amp; Culture</a>
-            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-brain"></i> Skills &amp; Vision</a>
-            <a href="contact.html" class="mobile-drawer-link active"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-terminal"></i> Index</a>
+            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-id-card"></i> Profile</a>
+            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-gears"></i> Robotics &amp; SciOly</a>
+            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-award"></i> Research &amp; Honors</a>
+            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-building-columns"></i> Civic Impact</a>
+            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-wave-square"></i> BCI &amp; Stack</a>
+            <a href="contact.html" class="mobile-drawer-link active"><i class="fas fa-paper-plane"></i> Contact</a>
         </div>
-
         <div class="mobile-drawer-footer">
-            <a href="contact.html" class="btn-hero-primary w-100 justify-content-center mb-3">
-                <i class="fas fa-paper-plane me-1"></i> Get In Touch
-            </a>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+            <a href="contact.html" class="btn-arch-primary w-100 justify-content-center mb-3">Direct Inquiry</a>
         </div>
     </div>
 
     <section class="section-padding">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag">Let's Connect</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-desc">Reach out for research collaborations, robotics sponsorship, or technology projects.</p>
+            <div class="section-header">
+                <span class="mono-label">DIRECT COMMUNICATION CHANNEL</span>
+                <h1 class="section-title">Contact &amp; Inquiries</h1>
+                <p class="section-desc">Connect regarding Brain-Computer Interface research, FIRST Tech Challenge robotics, or software engineering collaborations.</p>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-7 scroll-reveal-scale">
-                    <div class="glass-card p-4 p-md-5">
-                        
-                        <div class="d-flex flex-wrap justify-content-center gap-4 mb-4 text-center">
-                            <div>
-                                <i class="fas fa-envelope text-accent fa-2x mb-2 d-block"></i>
-                                <span class="text-white small fw-bold">Email</span>
-                                <p class="text-secondary small mb-0"><a href="mailto:aklavyakumr@gmail.com">aklavyakumr@gmail.com</a></p>
-                            </div>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">CONTACT COORDINATES</span>
+                        <h2 class="h4 mb-4">Direct Channels</h2>
 
-                            <div>
-                                <i class="fas fa-phone text-accent fa-2x mb-2 d-block"></i>
-                                <span class="text-white small fw-bold">Phone</span>
-                                <p class="text-secondary small mb-0"><a href="tel:+12336673778">+1 (233) 667-3778</a></p>
-                            </div>
-
-                            <div>
-                                <i class="fas fa-map-marker-alt text-accent fa-2x mb-2 d-block"></i>
-                                <span class="text-white small fw-bold">Location</span>
-                                <p class="text-secondary small mb-0">Mechanicsburg, PA, USA</p>
-                            </div>
+                        <div class="mb-4">
+                            <span class="mono-label">ELECTRONIC MAIL</span>
+                            <p class="mb-0"><a href="mailto:aklavyakumr@gmail.com">aklavyakumr@gmail.com</a></p>
                         </div>
 
-                        <hr class="my-4" style="border-color: var(--border-color);">
+                        <div class="mb-4">
+                            <span class="mono-label">TELEPHONE</span>
+                            <p class="mb-0"><a href="tel:+12336673778">+1 (233) 667-3778</a></p>
+                        </div>
 
-                        <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you, Aklavya has received your message.');">
+                        <div class="mb-4">
+                            <span class="mono-label">LINKEDIN PROFILE</span>
+                            <p class="mb-0"><a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer">linkedin.com/in/aklavyakumar</a></p>
+                        </div>
+
+                        <div class="mb-4">
+                            <span class="mono-label">GITHUB REPOSITORY</span>
+                            <p class="mb-0"><a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer">github.com/Fe4Rless233</a></p>
+                        </div>
+
+                        <div class="mb-0">
+                            <span class="mono-label">INSTITUTION &amp; LOCATION</span>
+                            <p class="mb-0">Cumberland Valley High School (Batch of June 2027)<br>Mechanicsburg, Pennsylvania, USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="arch-panel h-100">
+                        <span class="mono-label">TRANSMISSION FORM</span>
+                        <h2 class="h4 mb-4">Send a Direct Message</h2>
+
+                        <form id="contact-form" onsubmit="event.preventDefault(); alert('Message logged. Thank you for reaching out to Aklavya Kumar.');">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control-custom" placeholder="Your Name" required>
+                                    <label class="mono-label">SENDER NAME</label>
+                                    <input type="text" class="form-control-custom" placeholder="Full Name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control-custom" placeholder="Your Email Address" required>
+                                    <label class="mono-label">RETURN EMAIL</label>
+                                    <input type="email" class="form-control-custom" placeholder="name@institution.edu" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control-custom" placeholder="Subject" required>
+                                    <label class="mono-label">SUBJECT / TOPIC</label>
+                                    <input type="text" class="form-control-custom" placeholder="Research / Robotics / Software Inquiry" required>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control-custom" rows="4" placeholder="Your Message..." required></textarea>
+                                    <label class="mono-label">MESSAGE BODY</label>
+                                    <textarea class="form-control-custom" rows="5" placeholder="Enter your message..." required></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn-hero-primary w-100 justify-content-center">
-                                        <i class="fas fa-paper-plane me-1"></i> Send Message
+                                    <button type="submit" class="btn-arch-primary w-100 justify-content-center">
+                                        Transmit Message
                                     </button>
                                 </div>
                             </div>
                         </form>
-
-                        <hr class="my-4" style="border-color: var(--border-color);">
-
-                        <div class="d-flex justify-content-center gap-3">
-                            <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                            <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="http://www.pacar-robotics.org" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Robotics Site"><i class="fas fa-robot"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
         <div class="container text-center">
-            <p class="mb-1"><strong>Aklavya Kumar</strong> &bull; Class of 2027 &bull; Cumberland Valley High School</p>
-            <p class="small text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Aklavya Kumar. Guided by Innovation.</p>
+            <p class="mono-meta mb-1">AKLAVYA KUMAR // CUMBERLAND VALLEY HIGH SCHOOL (BATCH OF JUNE 2027)</p>
+            <p class="mono-meta mb-0">aklavyakumr@gmail.com // +1 (233) 667-3778</p>
         </div>
     </footer>
 

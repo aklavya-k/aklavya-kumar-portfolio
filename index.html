@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aklavya Kumar | Portfolio of High School Senior & STEM Leader (Batch of June 2027) at Cumberland Valley High School. FBLA Dual National Top 10, IRO World Semi-Finalist, Penn State PULSE Scholar, FTC Dean's List Semi-Finalist.">
-    <meta name="keywords" content="Aklavya Kumar, Cumberland Valley High School, Mechanicsburg PA, FTC 8468 The Javengers, FBLA National Competition, CogniTrack BCI, Penn State PULSE, Science Olympiad Robot Tour, CV Coding Club Founder, Junior Leadership Cumberland">
-    <title>Aklavya Kumar | Innovator, Engineer & STEM Leader</title>
+    <meta name="description" content="Aklavya Kumar | High School Senior (Batch of June 2027) at Cumberland Valley High School. Author of 'From Healing to Superhuman', CogniTrack BCI Lead (500+ neural datasets), IRO Semifinalist (Top 10% of 10k+ entrants), FBLA Dual National Top 10, FTC Robotics Lead.">
+    <title>Aklavya Kumar | Engineering, Neurotechnology &amp; Robotics Portfolio</title>
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Syne, Plus Jakarta Sans, JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 & FontAwesome -->
+    <!-- Bootstrap 5 Grid & FontAwesome -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
-    <!-- Custom Style System -->
+    <!-- Architectural High-Contrast Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,30 +23,30 @@
     <!-- Top Scroll Progress Bar -->
     <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
 
-    <!-- Background Canvas -->
-    <canvas id="particles-canvas"></canvas>
+    <!-- Real-Time 3D WebGL GLSL Topographic Shader Canvas -->
+    <canvas id="shader-canvas"></canvas>
 
-    <!-- Multi-Page Navigation Bar -->
+    <!-- Multi-Page Architectural Navigation Bar -->
     <nav class="navbar-custom">
         <div class="container d-flex align-items-center justify-content-between">
             <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
+                AKLAVYA <span>KUMAR</span>
             </a>
             
-            <div class="d-none d-lg-flex align-items-center gap-2">
-                <a href="index.html" class="nav-link-custom active">Home</a>
-                <a href="about.html" class="nav-link-custom">About</a>
-                <a href="stem.html" class="nav-link-custom">STEM &amp; Robotics</a>
-                <a href="academics.html" class="nav-link-custom">Academics &amp; Research</a>
-                <a href="community.html" class="nav-link-custom">Community</a>
-                <a href="aspirations.html" class="nav-link-custom">Skills &amp; Vision</a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html" class="nav-link-custom active">Index</a>
+                <a href="about.html" class="nav-link-custom">Profile</a>
+                <a href="stem.html" class="nav-link-custom">Robotics &amp; SciOly</a>
+                <a href="academics.html" class="nav-link-custom">Research &amp; Honors</a>
+                <a href="community.html" class="nav-link-custom">Civic Impact</a>
+                <a href="aspirations.html" class="nav-link-custom">BCI &amp; Stack</a>
             </div>
 
             <div class="d-flex align-items-center gap-2">
-                <a href="contact.html" class="btn-nav-action d-none d-sm-inline-flex">
-                    <i class="fas fa-paper-plane me-1"></i> Contact
+                <a href="contact.html" class="btn-arch-primary btn-arch-sm d-none d-sm-inline-flex">
+                    Contact
                 </a>
-                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu">
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -59,7 +58,7 @@
     <div id="mobile-drawer" class="mobile-drawer">
         <div class="mobile-drawer-header">
             <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
+                AKLAVYA <span>KUMAR</span>
             </a>
             <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu">
                 <i class="fas fa-times"></i>
@@ -67,20 +66,20 @@
         </div>
 
         <div class="mobile-drawer-nav">
-            <a href="index.html" class="mobile-drawer-link active"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-user"></i> About Me</a>
-            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-robot"></i> STEM &amp; Robotics</a>
-            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-graduation-cap"></i> Academics &amp; Research</a>
-            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-hands-helping"></i> Community &amp; Culture</a>
-            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-brain"></i> Skills &amp; Vision</a>
-            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="index.html" class="mobile-drawer-link active"><i class="fas fa-terminal"></i> Index</a>
+            <a href="about.html" class="mobile-drawer-link"><i class="fas fa-id-card"></i> Profile</a>
+            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-gears"></i> Robotics &amp; SciOly</a>
+            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-award"></i> Research &amp; Honors</a>
+            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-building-columns"></i> Civic Impact</a>
+            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-wave-square"></i> BCI &amp; Stack</a>
+            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-paper-plane"></i> Contact</a>
         </div>
 
         <div class="mobile-drawer-footer">
-            <a href="contact.html" class="btn-hero-primary w-100 justify-content-center mb-3">
-                <i class="fas fa-paper-plane me-1"></i> Get In Touch
+            <a href="contact.html" class="btn-arch-primary w-100 justify-content-center mb-3">
+                Direct Inquiry
             </a>
-            <div class="d-flex justify-content-center gap-3">
+            <div class="d-flex justify-content-center gap-2">
                 <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -88,50 +87,42 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (No Badge Above Headline, Solid High-Contrast Headline) -->
     <section id="about" class="hero-section">
         <div class="container">
             <div class="row align-items-center g-4 g-lg-5">
-                <!-- Profile Image: Displayed FIRST on mobile (order-1), second on desktop (order-lg-2) -->
-                <div class="col-lg-5 text-center scroll-reveal-right order-1 order-lg-2">
-                    <div class="profile-halo-container">
+                <!-- Portrait Frame: First on mobile (order-1), second on desktop (order-lg-2) -->
+                <div class="col-lg-5 text-center order-1 order-lg-2">
+                    <div class="profile-frame">
                         <img src="img/aklavya.jpg" alt="Aklavya Kumar" class="profile-img-main">
-                        <div class="floating-badge badge-1">
-                            <i class="fas fa-globe text-warning"></i> IRO Top 10% World
-                        </div>
-                        <div class="floating-badge badge-2">
-                            <i class="fas fa-robot text-info"></i> FTC 8468 Lead
-                        </div>
+                        <div class="profile-caption">CVHS SENIOR // BATCH OF JUNE 2027</div>
                     </div>
                 </div>
 
-                <!-- Text Content: Displayed SECOND on mobile (order-2), first on desktop (order-lg-1) -->
-                <div class="col-lg-7 scroll-reveal-left order-2 order-lg-1">
-                    <div class="hero-badge">
-                        <i class="fas fa-graduation-cap"></i> High School Senior (Class of 2027) &bull; CVHS
-                    </div>
+                <!-- Hero Content: Second on mobile (order-2), first on desktop (order-lg-1) -->
+                <div class="col-lg-7 order-2 order-lg-1">
                     <h1 class="hero-title">
-                        Architecting <span class="gradient-text">Robotics, AI &amp; Biotech</span> Innovations.
+                        Engineering Autonomous Systems, <span class="accent-solid">Neural Interfaces</span>, and Algorithms.
                     </h1>
                     <div class="hero-subtitle">
-                        <i class="fas fa-terminal me-2 text-accent"></i><span id="typewriter-text"></span>
+                        &gt; <span id="typewriter-text"></span>
                     </div>
                     <p class="hero-bio">
-                        Greetings! I am <strong>Aklavya Kumar</strong>, an honors student at Cumberland Valley High School. Build &amp; Programming Lead for <strong>FTC 8468 The Javengers</strong> (Dean's List Semi-Finalist), <strong>IRO World Semi-Finalist (Top 10%)</strong>, FBLA Dual National Top 10 placer, Penn State Medicine PULSE Scholar, and Founder of CV Coding Club and International Research Olympiad Club.
+                        I am <strong>Aklavya Kumar</strong>, a High School Senior at Cumberland Valley High School (Mechanicsburg, PA). I build millimeter-precise Java autonomous control systems for <strong>FIRST Tech Challenge (FTC 8468 The Javengers)</strong>, engineer EEG-based <strong>Brain-Computer Interfaces</strong> in Python and PyTorch across 500+ neural datasets, and authored the book <strong>"From Healing to Superhuman"</strong> on Amazon.
                     </p>
                     
-                    <div class="d-flex flex-wrap align-items-center gap-3 mb-4 text-secondary small justify-content-center justify-content-lg-start">
-                        <span><i class="fas fa-envelope text-accent me-1"></i> aklavyakumr@gmail.com</span>
-                        <span><i class="fas fa-phone text-accent me-1"></i> +1 (233) 667-3778</span>
-                        <span><i class="fab fa-linkedin text-accent me-1"></i> linkedin.com/in/aklavyakumar</span>
+                    <div class="d-flex flex-wrap align-items-center gap-3 mb-4 mono-meta justify-content-center justify-content-lg-start">
+                        <span>[EMAIL: aklavyakumr@gmail.com]</span>
+                        <span>[TEL: +1 (233) 667-3778]</span>
+                        <span>[LOC: MECHANICSBURG, PA]</span>
                     </div>
 
                     <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#projects" class="btn-hero-primary">
-                            <i class="fas fa-rocket"></i> Projects Showcase
+                        <a href="#projects" class="btn-arch-primary">
+                            Inspect Engineering Directory
                         </a>
-                        <a href="stem.html" class="btn-hero-secondary">
-                            <i class="fas fa-microchip"></i> Explore STEM &amp; Robotics Page
+                        <a href="#honors-ledger" class="btn-arch-secondary">
+                            Verified Honors &amp; Activities
                         </a>
                     </div>
                 </div>
@@ -139,142 +130,213 @@
         </div>
     </section>
 
-    <!-- Stats Summary Bar (Scroll Triggered Count Animation) -->
-    <section class="stats-bar bg-surface">
+    <!-- Quantitative Telemetry Bar -->
+    <section class="telemetry-bar">
         <div class="container">
-            <div class="row g-4 justify-content-center">
-                <div class="col-6 col-md-4 col-lg-2 scroll-reveal-scale delay-1">
-                    <div class="stat-item glass-card">
-                        <div class="stat-number" data-target="10" data-suffix="%">0</div>
-                        <div class="stat-label">IRO World Rank (Top 10%)</div>
-                    </div>
+            <div class="telemetry-grid">
+                <div class="telemetry-cell">
+                    <div class="telemetry-num">500<span>+</span></div>
+                    <div class="telemetry-label">EEG Neural Datasets</div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 scroll-reveal-scale delay-2">
-                    <div class="stat-item glass-card">
-                        <div class="stat-number" data-target="8" data-suffix="th">0</div>
-                        <div class="stat-label">FBLA National Rank</div>
-                    </div>
+                <div class="telemetry-cell">
+                    <div class="telemetry-num">Top 10<span>%</span></div>
+                    <div class="telemetry-label">IRO World (10k+ Entrants)</div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 scroll-reveal-scale delay-3">
-                    <div class="stat-item glass-card">
-                        <div class="stat-number" data-target="4" data-suffix="">0</div>
-                        <div class="stat-label">USACO Silver Students</div>
-                    </div>
+                <div class="telemetry-cell">
+                    <div class="telemetry-num">30<span>+</span></div>
+                    <div class="telemetry-label">SciOly Invitational Medals</div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 scroll-reveal-scale delay-4">
-                    <div class="stat-item glass-card">
-                        <div class="stat-number" data-target="19" data-suffix="th">0</div>
-                        <div class="stat-label">SciOly National Team Rank</div>
-                    </div>
+                <div class="telemetry-cell">
+                    <div class="telemetry-num">1<span>/30</span></div>
+                    <div class="telemetry-label">PSU PULSE Statewide</div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 scroll-reveal-scale delay-1">
-                    <div class="stat-item glass-card">
-                        <div class="stat-number" data-target="10" data-suffix="+ Yrs">0</div>
-                        <div class="stat-label">PA Food Bank Service</div>
-                    </div>
+                <div class="telemetry-cell">
+                    <div class="telemetry-num">70<span>+</span></div>
+                    <div class="telemetry-label">USACO / ACSL Students Coached</div>
+                </div>
+                <div class="telemetry-cell">
+                    <div class="telemetry-num">14k<span>+</span></div>
+                    <div class="telemetry-label">PA Food Bank Meals Funded</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Showcase Hub -->
+    <!-- Interactive Engineering & Research Directory -->
     <section id="projects" class="section-padding">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag">Interactive Portfolio</span>
-                <h2 class="section-title">Featured Projects &amp; Research</h2>
+            <div class="section-header">
+                <span class="mono-label">01 // TECHNICAL REPOSITORY</span>
+                <h2 class="section-title">Projects, Publications &amp; Hardware</h2>
                 <p class="section-desc">
-                    Explore my robotics modules, BCI research, competitive coding, game development, and published web applications.
+                    Filter by domain or search specific technologies (PyTorch, RoadRunner, PedroPathing, Next.js, Hovercraft, USACO).
                 </p>
             </div>
 
-            <!-- Showcase Controls -->
-            <div class="showcase-controls scroll-reveal delay-1">
+            <div class="showcase-controls">
                 <div class="filter-pills">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="robotics">Robotics &amp; AI</button>
-                    <button class="filter-btn" data-filter="biotech">Biotech &amp; Research</button>
-                    <button class="filter-btn" data-filter="coding">Coding &amp; Web</button>
-                    <button class="filter-btn" data-filter="leadership">Leadership &amp; Business</button>
-                    <button class="filter-btn" data-filter="community">Community</button>
+                    <button class="filter-btn active" data-filter="all">All Records (10)</button>
+                    <button class="filter-btn" data-filter="biotech">Biomedical &amp; BCI</button>
+                    <button class="filter-btn" data-filter="robotics">Robotics &amp; Hardware</button>
+                    <button class="filter-btn" data-filter="coding">Software &amp; Algorithms</button>
+                    <button class="filter-btn" data-filter="leadership">FBLA &amp; Finance</button>
+                    <button class="filter-btn" data-filter="community">Full-Stack &amp; Civic</button>
                 </div>
 
                 <div class="search-box">
                     <i class="fas fa-search"></i>
-                    <input type="text" id="project-search" placeholder="Search tech or topic (e.g. CogniTrack, React, Javengers)...">
+                    <input type="text" id="project-search" placeholder="Query stack or project...">
                 </div>
             </div>
 
-            <!-- Dynamic Grid -->
             <div class="row" id="projects-grid">
-                <!-- Project cards injected dynamically -->
+                <!-- Populated dynamically via main.js -->
             </div>
         </div>
     </section>
 
-    <!-- Multi-Page Feature Navigation Highlights -->
-    <section class="section-padding" style="background: var(--bg-surface);">
+    <!-- National & International Honors Ledger -->
+    <section id="honors-ledger" class="section-padding">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag">Explore Detailed Pages</span>
-                <h2 class="section-title">Deep Dive Into My Portfolio</h2>
-                <p class="section-desc">Navigate dedicated sections to learn more about my robotics team, academic honors, community service, and technical vision.</p>
+            <div class="section-header">
+                <span class="mono-label">02 // VERIFIED DISTINCTIONS</span>
+                <h2 class="section-title">International, National &amp; State Honors</h2>
+                <p class="section-desc">
+                    Official competitive standings across scientific research, robotics, software engineering, and literary arts.
+                </p>
             </div>
 
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3 scroll-reveal-scale delay-1">
-                    <div class="glass-card p-4 text-center h-100">
-                        <i class="fas fa-robot fa-3x text-accent mb-3"></i>
-                        <h4 class="h5 text-white mb-2">STEM &amp; Robotics</h4>
-                        <p class="small text-secondary mb-3">FTC 8468 The Javengers, Science Olympiad Robot Tour, &amp; Dean's List Semi-Finalist honors.</p>
-                        <a href="stem.html" class="btn btn-hero-secondary btn-sm">Explore STEM <i class="fas fa-arrow-right ms-1"></i></a>
+                <div class="col-lg-6">
+                    <div class="ledger-row">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="mono-label mb-0">INTERNATIONAL RECOGNITION</span>
+                            <span class="ledger-badge">TOP 10% OF 10,000+</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">International Research Olympiad (IRO) Semifinalist</h3>
+                        <p class="mb-0 small">Placed in the Top 10% globally among 10,000+ international entrants in rigorous quantitative research and scientific literature analysis.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="mono-label mb-0">NATIONAL &amp; STATE CHAMPIONSHIP</span>
+                            <span class="ledger-badge">1ST PA // 8TH &amp; 10TH NAT'L</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Future Business Leaders of America (FBLA)</h3>
+                        <p class="mb-0 small">1st Place PA State Champion &amp; 10th Place National Winner in Management Information Systems (2026); 3rd Place PA State &amp; 8th Place National Winner in Intro to Programming (2025); 3rd Place PA State in Fundamentals of AI.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="mono-label mb-0">NATIONAL INVITATIONALS &amp; TOURNAMENT</span>
+                            <span class="ledger-badge">30+ MEDALS // 19TH &amp; 20TH NAT'L</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Science Olympiad National Multi-Medalist</h3>
+                        <p class="mb-0 small">3rd Place MIT Hovercraft, 4th Place Penn State Electric Vehicle, 5th Place Robot Tour. 30+ individual and team build/lab medals across MIT, UPenn, Solon, and Valley Forge; 19th (2024) &amp; 20th (2025) National Team finishes.</p>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-3 scroll-reveal-scale delay-2">
-                    <div class="glass-card p-4 text-center h-100">
-                        <i class="fas fa-graduation-cap fa-3x text-warning mb-3"></i>
-                        <h4 class="h5 text-white mb-2">Academics &amp; Research</h4>
-                        <p class="small text-secondary mb-3">FBLA Dual National Top 10, Credly badges, CV Coding Club website &amp; IRO Semi-Finalist poster.</p>
-                        <a href="academics.html" class="btn btn-hero-secondary btn-sm">Explore Academics <i class="fas fa-arrow-right ms-1"></i></a>
+                <div class="col-lg-6">
+                    <div class="ledger-row">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="mono-label mb-0">STATE ROBOTICS RECOGNITION</span>
+                            <span class="ledger-badge">TOP 40 STATEWIDE</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">FIRST Robotics Dean's List Semi-Finalist &amp; 3x State Finalist</h3>
+                        <p class="mb-0 small">Named FIRST Dean's List Semi-Finalist (Top 40 across Pennsylvania). Led FTC team to 3 State Finals appearances and 12 competitive awards including Control, Inspire, Motivate, Connect, and Think awards.</p>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-3 scroll-reveal-scale delay-3">
-                    <div class="glass-card p-4 text-center h-100">
-                        <i class="fas fa-hands-helping fa-3x text-cyan mb-3"></i>
-                        <h4 class="h5 text-white mb-2">Community &amp; Culture</h4>
-                        <p class="small text-secondary mb-3">10+ Years PA Food Bank fundraising, STEMsters outreach, and official ABHA website.</p>
-                        <a href="community.html" class="btn btn-hero-secondary btn-sm">Explore Community <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="ledger-row">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="mono-label mb-0">NATIONAL LITERARY QUALIFIER</span>
+                            <span class="ledger-badge">GOLD KEY WINNER</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Scholastic Art &amp; Writing Awards</h3>
+                        <p class="mb-0 small">Awarded the Gold Key for Personal Memoir (Top Regional Honor and National Qualifier).</p>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-3 scroll-reveal-scale delay-4">
-                    <div class="glass-card p-4 text-center h-100">
-                        <i class="fas fa-brain fa-3x text-purple mb-3"></i>
-                        <h4 class="h5 text-white mb-2">Skills &amp; Vision</h4>
-                        <p class="small text-secondary mb-3">CogniTrack BCI Medium article, technical skill levels, and NASA Aerospace vision.</p>
-                        <a href="aspirations.html" class="btn btn-hero-secondary btn-sm">Explore Vision <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="ledger-row">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="mono-label mb-0">REGIONAL MARKETING &amp; ORATORY</span>
+                            <span class="ledger-badge">2ND &amp; 3RD REGIONAL</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">DECA &amp; North South Foundation Public Speaking</h3>
+                        <p class="mb-0 small">3rd Place Regional in DECA Principles of Marketing; 2nd Place Regional in Senior Public Speaking (2025 and 2026) at the North South Foundation.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Back to Top Floating Action Button -->
+    <!-- Multi-Page Directory Grid (4-Column Architectural Index) -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="mono-label">03 // SYSTEM ARCHITECTURE</span>
+                <h2 class="section-title">Dedicated Portfolio Modules</h2>
+                <p class="section-desc">Explore full documentation, schematics, and credentials across each specialized page.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="arch-panel h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="mono-label">MODULE 01</span>
+                            <h3 class="h4 mb-2">Robotics &amp; SciOly</h3>
+                            <p class="small mb-4">FTC 8468 The Javengers autonomous Java paths, Hovercraft, Electric Vehicle, Robot Tour, and Helicopter engineering.</p>
+                        </div>
+                        <a href="stem.html" class="btn-arch-secondary btn-arch-sm w-100 justify-content-center">Open STEM Module</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="arch-panel h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="mono-label">MODULE 02</span>
+                            <h3 class="h4 mb-2">Research &amp; Honors</h3>
+                            <p class="small mb-4">IRO Top 10% World certificate, PSU PULSE medical pathway, FBLA National wins, CVHS Coding Club &amp; JLC.</p>
+                        </div>
+                        <a href="academics.html" class="btn-arch-secondary btn-arch-sm w-100 justify-content-center">Open Research Module</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="arch-panel h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="mono-label">MODULE 03</span>
+                            <h3 class="h4 mb-2">Civic Impact</h3>
+                            <p class="small mb-4">ABHA React/Next.js platform (1,000+ users), 14,000+ meals for PA Food Bank, STEMsters (100+ students).</p>
+                        </div>
+                        <a href="community.html" class="btn-arch-secondary btn-arch-sm w-100 justify-content-center">Open Civic Module</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="arch-panel h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="mono-label">MODULE 04</span>
+                            <h3 class="h4 mb-2">BCI &amp; Tech Stack</h3>
+                            <p class="small mb-4">Published book "From Healing to Superhuman", 20 programming languages, CAD tools, and certifications.</p>
+                        </div>
+                        <a href="aspirations.html" class="btn-arch-secondary btn-arch-sm w-100 justify-content-center">Open Stack Module</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
     <button id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Project Modal Overlay -->
     <div id="project-modal" class="modal-overlay">
-        <div class="modal-content-glass">
+        <div class="modal-content-arch">
             <button id="modal-close" class="modal-close-btn" aria-label="Close modal">
                 <i class="fas fa-times"></i>
             </button>
-            <div id="modal-body-content">
-                <!-- Injected dynamically -->
-            </div>
+            <div id="modal-body-content"></div>
         </div>
     </div>
 
@@ -282,25 +344,16 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="http://www.pacar-robotics.org" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Robotics Site">
-                    <i class="fas fa-robot"></i>
-                </a>
+                <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="http://www.pacar-robotics.org" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="PACAR Robotics"><i class="fas fa-robot"></i></a>
             </div>
-            <p class="mb-1"><strong>Aklavya Kumar</strong> &bull; Class of 2027 &bull; Cumberland Valley High School</p>
-            <p class="small text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Aklavya Kumar. Driven by Innovation, Guided by Purpose.</p>
+            <p class="mono-meta mb-1">AKLAVYA KUMAR // CUMBERLAND VALLEY HIGH SCHOOL (BATCH OF JUNE 2027)</p>
+            <p class="mono-meta mb-0">aklavyakumr@gmail.com // +1 (233) 667-3778 // Mechanicsburg, PA</p>
         </div>
     </footer>
 
-    <!-- Bootstrap & Custom Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>

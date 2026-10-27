@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Aklavya Kumar | High School Senior (Class of 2027) at Cumberland Valley High School, Mechanicsburg PA. Background, passions, and story.">
-    <title>About Aklavya Kumar | Story & Passions</title>
+    <meta name="description" content="About Aklavya Kumar | High School Senior (Batch of June 2027) at Cumberland Valley High School, Mechanicsburg PA. Complete Common App Activities & Executive Summary.">
+    <title>Aklavya Kumar | Executive Profile &amp; Activity Ledger</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,27 +16,23 @@
 </head>
 <body>
     <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
-    <canvas id="particles-canvas"></canvas>
+    <canvas id="shader-canvas"></canvas>
 
     <!-- Navigation Bar -->
     <nav class="navbar-custom">
         <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <div class="d-none d-lg-flex align-items-center gap-2">
-                <a href="index.html" class="nav-link-custom">Home</a>
-                <a href="about.html" class="nav-link-custom active">About</a>
-                <a href="stem.html" class="nav-link-custom">STEM &amp; Robotics</a>
-                <a href="academics.html" class="nav-link-custom">Academics &amp; Research</a>
-                <a href="community.html" class="nav-link-custom">Community</a>
-                <a href="aspirations.html" class="nav-link-custom">Skills &amp; Vision</a>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <div class="d-none d-lg-flex align-items-center gap-1">
+                <a href="index.html" class="nav-link-custom">Index</a>
+                <a href="about.html" class="nav-link-custom active">Profile</a>
+                <a href="stem.html" class="nav-link-custom">Robotics &amp; SciOly</a>
+                <a href="academics.html" class="nav-link-custom">Research &amp; Honors</a>
+                <a href="community.html" class="nav-link-custom">Civic Impact</a>
+                <a href="aspirations.html" class="nav-link-custom">BCI &amp; Stack</a>
             </div>
             <div class="d-flex align-items-center gap-2">
-                <a href="contact.html" class="btn-nav-action d-none d-sm-inline-flex">Contact</a>
-                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <a href="contact.html" class="btn-arch-primary btn-arch-sm d-none d-sm-inline-flex">Contact</a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </nav>
@@ -45,79 +41,161 @@
     <div id="mobile-drawer-overlay" class="mobile-drawer-overlay"></div>
     <div id="mobile-drawer" class="mobile-drawer">
         <div class="mobile-drawer-header">
-            <a href="index.html" class="navbar-brand-custom">
-                Aklavya <span>Kumar</span>
-            </a>
-            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu">
-                <i class="fas fa-times"></i>
-            </button>
+            <a href="index.html" class="navbar-brand-custom">AKLAVYA <span>KUMAR</span></a>
+            <button id="mobile-drawer-close" class="mobile-drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
         </div>
-
         <div class="mobile-drawer-nav">
-            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-drawer-link active"><i class="fas fa-user"></i> About Me</a>
-            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-robot"></i> STEM &amp; Robotics</a>
-            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-graduation-cap"></i> Academics &amp; Research</a>
-            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-hands-helping"></i> Community &amp; Culture</a>
-            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-brain"></i> Skills &amp; Vision</a>
-            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="index.html" class="mobile-drawer-link"><i class="fas fa-terminal"></i> Index</a>
+            <a href="about.html" class="mobile-drawer-link active"><i class="fas fa-id-card"></i> Profile</a>
+            <a href="stem.html" class="mobile-drawer-link"><i class="fas fa-gears"></i> Robotics &amp; SciOly</a>
+            <a href="academics.html" class="mobile-drawer-link"><i class="fas fa-award"></i> Research &amp; Honors</a>
+            <a href="community.html" class="mobile-drawer-link"><i class="fas fa-building-columns"></i> Civic Impact</a>
+            <a href="aspirations.html" class="mobile-drawer-link"><i class="fas fa-wave-square"></i> BCI &amp; Stack</a>
+            <a href="contact.html" class="mobile-drawer-link"><i class="fas fa-paper-plane"></i> Contact</a>
         </div>
-
         <div class="mobile-drawer-footer">
-            <a href="contact.html" class="btn-hero-primary w-100 justify-content-center mb-3">
-                <i class="fas fa-paper-plane me-1"></i> Get In Touch
-            </a>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="mailto:aklavyakumr@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/aklavyakumar" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Fe4Rless233" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+            <a href="contact.html" class="btn-arch-primary w-100 justify-content-center mb-3">Direct Inquiry</a>
         </div>
     </div>
 
     <section class="section-padding">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <span class="section-tag">Personal Journey</span>
-                <h2 class="section-title">Discover My Story</h2>
-                <p class="section-desc">High School Senior at Cumberland Valley High School, Mechanicsburg PA.</p>
+            <div class="section-header">
+                <span class="mono-label">EXECUTIVE DOSSIER // CUMBERLAND VALLEY HIGH SCHOOL (BATCH OF JUNE 2027)</span>
+                <h1 class="section-title">Professional Summary &amp; Leadership Ledger</h1>
+                <p class="section-desc">Specializing in the convergence of Computer Science, Neurotechnology, Physics, and Autonomous Engineering.</p>
             </div>
 
-            <div class="row align-items-center g-4 g-lg-5">
-                <!-- Mugshot Photo: First on mobile (order-1), second on desktop (order-lg-1 if left, or order-1) -->
-                <div class="col-lg-5 text-center scroll-reveal-left order-1">
-                    <div class="profile-halo-container">
+            <!-- Portrait & Professional Summary -->
+            <div class="row align-items-center g-4 g-lg-5 mb-5">
+                <div class="col-lg-5 text-center order-1">
+                    <div class="profile-frame">
                         <img src="img/aklavya.jpg" alt="Aklavya Kumar" class="profile-img-main">
+                        <div class="profile-caption">AKLAVYA KUMAR // MECHANICSBURG, PA</div>
                     </div>
                 </div>
-                <!-- Text Content: Second on mobile (order-2) -->
-                <div class="col-lg-7 scroll-reveal-right order-2">
-                    <div class="glass-card p-4 p-md-5">
-                        <h3 class="h3 mb-3">Hello, I'm <span class="gradient-text">Aklavya Kumar</span></h3>
-                        <p class="text-secondary lead mb-3">
-                            A high-achieving <strong>High School Senior (Class of 2027)</strong> at Cumberland Valley High School in Mechanicsburg, Pennsylvania.
+                <div class="col-lg-7 order-2">
+                    <div class="arch-panel">
+                        <span class="mono-label">EDUCATION // AUG 2021 - PRESENT (BATCH OF JUNE 2027)</span>
+                        <h2 class="h3 mb-3">Cumberland Valley High School</h2>
+                        <p class="mb-3">
+                            High-achieving High School Senior and STEM leader specializing in the convergence of <strong>Computer Science, Biology, Physics, and Mathematics</strong>. Dedicated to engineering technology for social impact and advancing STEM education through interdisciplinary work in autonomous robotics and neurotechnology.
                         </p>
-                        <p class="text-secondary mb-3">
-                            Known by peers as articulate, collaborative, and fiercely competitive, I channel my enthusiasm into competitive programming (USACO in C++), FTC autonomous robotics programming (Java), business analytics (FBLA National Top 10), and Science Olympiad (National Competitor).
+                        <p class="mb-0">
+                            Author of the published book <strong>"From Healing to Superhuman"</strong> on Amazon, Lead Researcher of the <strong>CogniTrack EEG Brain-Computer Interface</strong> platform (500+ neural datasets), <strong>International Research Olympiad (IRO) Semifinalist</strong> (Top 10% of 10,000+ entrants), and Build &amp; Programming Lead for <strong>FTC 8468 The Javengers</strong> (FIRST Dean's List Semi-Finalist, Top 40 in PA).
                         </p>
-                        <p class="text-secondary mb-0">
-                            Build &amp; Programming Lead for <strong>FTC 8468 The Javengers</strong> (Dean's List Semi-Finalist), <strong>IRO World Semi-Finalist (Top 10% in the world)</strong>, Penn State PULSE Scholar, and Founder of CV Coding Club. My long-term ambitions lie in Aerospace Engineering (NASA) and Biotechnology Innovation.
-                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Complete 10-Activity Ledger (From Common App & Resume PDFs) -->
+            <div class="section-header mt-5 mb-4">
+                <span class="mono-label">COMPLETE ACTIVITY LOG // VERIFIED COMMITMENT &amp; METRICS</span>
+                <h2 class="h2">Leadership, Research &amp; Extracurricular Architecture</h2>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">01 // ROBOTICS (GRADES 9, 10, 11, 12 // 10 HRS/WK, 36 WKS/YR)</span>
+                            <span class="ledger-badge">3 STATE FINALS + 12 AWARDS</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Build &amp; Programming Lead, Dean's List Semi-Finalist | FIRST Tech Challenge (FTC 8468 / 14464)</h3>
+                        <p class="mb-0 small">Programmed millimeter-precise Java autonomous systems (RoadRunner, PedroPathing). Engineered intake, lift, and scoring mechanisms for a state-winning robot. Mentored 40+ youth. Named Dean's List Semi-Finalist (Top 40 in PA).</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">02 // SCIENCE &amp; ENGINEERING (GRADES 9, 10, 11, 12 // 6 HRS/WK, 30 WKS/YR)</span>
+                            <span class="ledger-badge">19TH &amp; 20TH NAT'L // 30+ MEDALS</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Varsity Competitor &amp; Lead Robotics Developer | CVHS Science Olympiad</h3>
+                        <p class="mb-0 small">Led 20+ member team to consecutive Top-20 National finishes (19th in 2024, 20th in 2025); won 30+ individual and team build/lab awards at MIT, UPenn, Solon, and Penn State invitationals (3rd MIT Hovercraft, 4th PSU Electric Vehicle, 5th Robot Tour).</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">03 // BIOMEDICAL RESEARCH (GRADES 11, 12 // 5 HRS/WK, 30 WKS/YR)</span>
+                            <span class="ledger-badge">500+ NEURAL DATASETS</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Lead Researcher &amp; Developer | Independent Biomedical &amp; BCI Research</h3>
+                        <p class="mb-0 small">Engineered EEG-based Brain-Computer Interface (BCI) platform in Python and PyTorch processing 500+ neural signal datasets to predict cognitive burnout; authored and published computational biomedical research paper.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">04 // INDEPENDENT PUBLICATION (GRADES 11, 12 // 2 HRS/WK, 15 WKS/YR)</span>
+                            <span class="ledger-badge">PUBLISHED ON AMAZON</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Author &amp; Independent Writer | "From Healing to Superhuman"</h3>
+                        <p class="mb-0 small">Authored and published book on Amazon exploring Brain-Computer Interfaces (BCIs), medical therapeutics, cognitive enhancement, and human resilience; managed independent editing, formatting, and global retail distribution.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">05 // COMPUTER SCIENCE (GRADES 10, 11, 12 // 4 HRS/WK, 28 WKS/YR)</span>
+                            <span class="ledger-badge">25+ WORKSHOPS // 4 USACO SILVER</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Founder &amp; President | Cumberland Valley High School Coding Club</h3>
+                        <p class="mb-0 small">Formulated ACSL and USACO curriculum in Dynamic Programming, Graph Theory, and Greedy algorithms; led 25+ workshops with mock contests; coached 70+ students to ACSL Finals and USACO Silver ranks (including 4 Silver-ranked students).</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">06 // ACADEMIC RESEARCH (GRADES 11, 12 // 3 HRS/WK, 25 WKS/YR)</span>
+                            <span class="ledger-badge">TOP 10% GLOBALLY // 60+ MENTORED</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">CVHS Chapter Founder &amp; President | International Research Olympiad (IRO) Club</h3>
+                        <p class="mb-0 small">Pioneered school's first research program; mentored 60+ peers in quantitative, qualitative, and mixed-method research, Python/pandas data analysis, and scientific paper writing. International Semifinalist (Top 10% of 10k+ entrants).</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">07 // CLINICAL MEDICINE &amp; CIVIC LEADERSHIP (GRADE 11 // 3 HRS/WK, 12-25 WKS/YR)</span>
+                            <span class="ledger-badge">1 OF 30 SELECTED STATEWIDE</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Cohort Participant | Penn State College of Medicine PULSE &amp; Junior Leadership Cumberland (JLC)</h3>
+                        <p class="mb-0 small">Selected 1 of 30 statewide for 12-week Penn State Medicine pathway; completed 40+ hours of clinical shadowing, PBL medical cases, and hospital projects. Executed 10+ leadership workshops and civic initiatives in JLC.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">08 // FINANCE &amp; BUSINESS (GRADES 10, 11, 12 // 3 HRS/WK, 28 WKS/YR)</span>
+                            <span class="ledger-badge">1ST PA // 8TH &amp; 10TH NAT'L</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Region 26 Treasurer &amp; National Competitor | FBLA &amp; DECA</h3>
+                        <p class="mb-0 small">Managed Region 26 financial accounts and RLC event budgets; placed 1st in PA &amp; 10th Nationally in Management Information Systems (2026), 3rd in PA &amp; 8th Nationally in Intro to Programming (2025), 3rd in PA AI, and 3rd in DECA Principles of Marketing.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">09 // K-8 STEM OUTREACH (GRADES 10, 11, 12 // 3 HRS/WK, 25 WKS/YR)</span>
+                            <span class="ledger-badge">6+ DRIVES // 100+ STUDENTS</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Treasurer | STEMsters Club</h3>
+                        <p class="mb-0 small">Administered annual budgets and member dues for K-8 STEM outreach; spearheaded 6+ fundraising drives and directed interactive engineering workshops for 100+ students.</p>
+                    </div>
+
+                    <div class="ledger-row">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-1">
+                            <span class="mono-label mb-0">10 // CIVIC SERVICE &amp; WEB ENGINEERING (GRADES 9, 10, 11, 12 // 2 HRS/WK, 40 WKS/YR)</span>
+                            <span class="ledger-badge">1,000+ USERS // 14,000+ MEALS</span>
+                        </div>
+                        <h3 class="h5 text-white mb-1">Webmaster &amp; Volunteer Lead | Association of Bengalis in Harrisburg Area (ABHA) &amp; PA Food Bank</h3>
+                        <p class="mb-0 small">Engineered and deployed official community React/Next.js site (abhaweb.org) serving 1,000+ local users; completed 10+ years of Central Pennsylvania Food Bank service, raising funds to provide over 14,000 meals.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
         <div class="container text-center">
-            <p class="mb-1"><strong>Aklavya Kumar</strong> &bull; Class of 2027 &bull; Cumberland Valley High School</p>
-            <p class="small text-muted">&copy; <script>document.write(new Date().getFullYear())</script> Aklavya Kumar. Driven by Innovation, Guided by Purpose.</p>
+            <p class="mono-meta mb-1">AKLAVYA KUMAR // CUMBERLAND VALLEY HIGH SCHOOL (BATCH OF JUNE 2027)</p>
+            <p class="mono-meta mb-0">aklavyakumr@gmail.com // +1 (233) 667-3778</p>
         </div>
     </footer>
 
